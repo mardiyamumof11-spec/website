@@ -123,20 +123,108 @@ h2 {
   border-bottom: 1px solid var(--border);
 }
 
-.steps-grid {
-  margin-top: 1.2rem;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+.how-it-works {
+  background: linear-gradient(165deg, #f6efea 0%, #f3e8e6 100%);
 }
 
-.info-card,
+.how-it-works-inner {
+  width: min(420px, calc(100% - 2rem));
+  margin: 0 auto;
+  text-align: center;
+}
+
+.how-topline {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  letter-spacing: 0.06em;
+  font-size: 0.92rem;
+  color: #7f615e;
+}
+
+.how-it-works h2 {
+  margin-top: 0.35rem;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(2rem, 8vw, 2.4rem);
+  color: #4b3230;
+}
+
+.how-divider {
+  margin: 0 auto 1.7rem;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.how-divider::before,
+.how-divider::after {
+  content: "";
+  height: 1px;
+  background: #d7b9b0;
+}
+
+.how-heart {
+  color: #b88883;
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.how-steps {
+  display: grid;
+  gap: 1.35rem;
+}
+
+.how-step,
 .price-card {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 1.25rem;
+  padding: 1.3rem 1.1rem;
   box-shadow: 0 8px 18px rgba(93, 59, 84, 0.08);
+}
+
+.icon-badge {
+  width: 54px;
+  aspect-ratio: 1;
+  margin: 0 auto 0.7rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid #e6cbc4;
+  background: linear-gradient(155deg, #f4dedd 0%, #ebcdc8 100%);
+}
+
+.icon-badge svg {
+  width: 23px;
+  height: 23px;
+  fill: none;
+  stroke: #7c5750;
+  stroke-width: 1.55;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.step-number {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #bc9a67;
+  line-height: 1;
+}
+
+.how-step h3 {
+  margin: 0.3rem 0 0.5rem;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.28rem;
+  font-weight: 600;
+}
+
+.how-step p {
+  margin: 0;
+  color: #5f4d4a;
+  font-size: 0.95rem;
 }
 
 .price-card {
@@ -222,7 +310,7 @@ ul {
     font-size: 0.98rem;
   }
 
-  .info-card,
+  .how-step,
   .price-card {
     border-radius: 14px;
     padding: 1rem;
@@ -235,5 +323,75 @@ ul {
   .btn {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .how-it-works-inner {
+    width: min(620px, calc(100% - 3rem));
+  }
+
+  .how-it-works h2 {
+    font-size: clamp(2.35rem, 4.7vw, 2.9rem);
+  }
+
+  .how-steps {
+    gap: 1.7rem;
+  }
+
+  .how-step {
+    padding: 1.7rem 1.5rem;
+  }
+
+  .icon-badge {
+    width: 62px;
+    margin-bottom: 0.85rem;
+  }
+
+  .icon-badge svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .step-number {
+    font-size: 2.35rem;
+  }
+
+  .how-step h3 {
+    font-size: 1.45rem;
+  }
+
+  .how-step p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .how-it-works-inner {
+    width: min(760px, calc(100% - 4rem));
+  }
+
+  .how-it-works h2 {
+    font-size: 3.1rem;
+  }
+
+  .how-topline {
+    font-size: 1rem;
+  }
+
+  .how-step {
+    padding: 1.95rem 1.8rem;
+  }
+
+  .step-number {
+    font-size: 2.6rem;
+  }
+
+  .how-step h3 {
+    font-size: 1.62rem;
+  }
+
+  .how-step p {
+    font-size: 1.04rem;
   }
 }
