@@ -458,6 +458,49 @@ h2 {
   font-weight: 600;
 }
 
+.testimonials {
+  text-align: center;
+  background: linear-gradient(160deg, #fdf8f4 0%, #f8eee8 100%);
+  border-top: 1px solid #ecdcd6;
+  border-bottom: 1px solid #ecdcd6;
+}
+
+.testimonials h2 {
+  margin-bottom: 0.3rem;
+  color: #4f3735;
+}
+
+.testimonials-subtitle {
+  margin: 0 auto 1.7rem;
+  color: #725c59;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.testimonial-card {
+  background: linear-gradient(165deg, #fffdfb 0%, #fdf3ee 100%);
+  border: 1px solid #ecd9d2;
+  border-radius: 20px;
+  padding: 1.2rem 1.1rem;
+  box-shadow: 0 10px 20px rgba(96, 60, 82, 0.08);
+}
+
+.testimonial-card p {
+  margin: 0;
+  color: #5f4d4a;
+}
+
+.testimonial-name {
+  margin-top: 0.9rem;
+  font-family: "Playfair Display", Georgia, serif;
+  color: #8b5f73;
+  font-size: 1.03rem;
+}
+
 .price-card {
   max-width: 540px;
   margin: 0 auto;
@@ -788,6 +831,11 @@ h2 {
 }
 
 @media (min-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem;
+  }
+
   .examples-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.45rem;
@@ -860,6 +908,11 @@ h2 {
 }
 
 @media (min-width: 1024px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.35rem;
+  }
+
   .examples-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.55rem;
