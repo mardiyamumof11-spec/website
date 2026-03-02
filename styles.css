@@ -227,6 +227,95 @@ h2 {
   font-size: 0.95rem;
 }
 
+.examples {
+  background: linear-gradient(160deg, #fdf3ee 0%, #f9eae7 100%);
+  border-top: 1px solid #efdcd6;
+  border-bottom: 1px solid #efdcd6;
+}
+
+.examples .container {
+  text-align: center;
+}
+
+.examples-topline {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  color: #8a6662;
+  letter-spacing: 0.06em;
+  font-size: 0.92rem;
+}
+
+.examples h2 {
+  margin-top: 0.35rem;
+  color: #503836;
+}
+
+.examples-description {
+  margin: 0 auto 1.8rem;
+  max-width: 62ch;
+  color: #6f5957;
+}
+
+.examples-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+}
+
+.example-card {
+  background: linear-gradient(160deg, #fffefc 0%, #fdf6f2 100%);
+  border: 1px solid #ecd9d2;
+  border-radius: 22px;
+  box-shadow: 0 10px 22px rgba(96, 60, 82, 0.1);
+  overflow: hidden;
+  text-align: left;
+  transition: transform 240ms ease, box-shadow 240ms ease;
+}
+
+.example-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(96, 60, 82, 0.18);
+}
+
+.example-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+}
+
+.example-content {
+  padding: 1.05rem 1rem 1.15rem;
+}
+
+.example-content h3 {
+  margin: 0 0 0.42rem;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.3rem;
+  color: #4a3230;
+}
+
+.example-content p {
+  margin: 0;
+  color: #6c5754;
+  font-size: 0.96rem;
+}
+
+.example-tag {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.32rem 0.72rem;
+  border-radius: 999px;
+  background: #f3e0db;
+  color: #7b5753;
+  font-size: 0.74rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
 .price-card {
   max-width: 540px;
   margin: 0 auto;
@@ -394,6 +483,11 @@ h2 {
 }
 
 @media (min-width: 768px) {
+  .examples-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.45rem;
+  }
+
   .price-card {
     padding: 2.45rem 2.2rem 2.1rem;
   }
@@ -457,6 +551,11 @@ h2 {
 }
 
 @media (min-width: 1024px) {
+  .examples-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.55rem;
+  }
+
   .price-card {
     max-width: 620px;
     padding: 2.75rem 2.8rem 2.35rem;
