@@ -550,6 +550,40 @@ h2 {
   margin-top: 0.23rem;
 }
 
+.order-ready {
+  margin: 0 0 1.35rem;
+  padding: 1.2rem 1rem 1.1rem;
+  border: 1px solid #ecd8d4;
+  border-radius: 16px;
+  background: linear-gradient(160deg, #fffaf6 0%, #f8ece6 100%);
+}
+
+.order-ready h3 {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.35rem, 4.8vw, 1.65rem);
+  color: #5d413e;
+}
+
+.order-ready p {
+  margin: 0.35rem auto 1rem;
+  max-width: 48ch;
+  color: #6f5957;
+  font-size: 0.95rem;
+}
+
+.order-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.order-actions .btn {
+  width: min(360px, 100%);
+  border-radius: 14px;
+}
+
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -589,6 +623,18 @@ h2 {
 
 .btn-secondary:hover {
   background: linear-gradient(160deg, #f0e5dc 0%, #dfcdc0 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 13px 24px rgba(90, 56, 76, 0.2);
+}
+
+.btn-tertiary {
+  background: linear-gradient(160deg, #ead9ca 0%, #dbc2ae 100%);
+  color: #5e4742;
+  box-shadow: 0 9px 18px rgba(90, 56, 76, 0.16);
+}
+
+.btn-tertiary:hover {
+  background: linear-gradient(160deg, #e2d0c1 0%, #d2b59f 100%);
   transform: translateY(-2px);
   box-shadow: 0 13px 24px rgba(90, 56, 76, 0.2);
 }
