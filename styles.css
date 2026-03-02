@@ -584,6 +584,35 @@ h2 {
   border-radius: 14px;
 }
 
+.paypal-inline {
+  margin-top: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  color: #7d6663;
+  font-size: 0.83rem;
+}
+
+.paypal-inline a {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.paypal-logo {
+  width: 3.35rem;
+  height: auto;
+  opacity: 0.88;
+  transition: opacity 220ms ease, transform 220ms ease;
+}
+
+.paypal-inline a:hover .paypal-logo,
+.paypal-inline a:focus-visible .paypal-logo {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
 .btn {
   display: inline-block;
   text-decoration: none;
