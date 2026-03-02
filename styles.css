@@ -121,9 +121,9 @@ h2 {
 .about {
   padding: 100px 0;
   background: linear-gradient(180deg, #fdf7f3 0%, #f8efe8 55%, #fdf8f4 100%);
-  color: #4f3a33;
+  color: #3a2924;
   text-align: center;
-  line-height: 1.8;
+  line-height: 1.9;
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 700ms ease, transform 700ms ease;
@@ -149,19 +149,21 @@ h2 {
 
 .about-title {
   margin: 0.3rem 0 1.3rem;
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(2rem, 5vw, 2.7rem);
+  font-family: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  font-size: clamp(2rem, 5vw, 2.8rem);
   letter-spacing: 0.06em;
   font-weight: 600;
-  background: linear-gradient(90deg, #bfa46f, #f2e3b6, #bfa46f);
+  background: linear-gradient(100deg, #f3dfaa 0%, #d1ab5f 45%, #a77a2f 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  text-shadow: 0 0 18px rgba(191, 164, 111, 0.22);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.22);
 }
 
 .about p {
   margin: 0 0 1rem;
+  color: #2f201c;
+  font-family: "Inter", "Lato", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
 .about-intro {
@@ -170,11 +172,12 @@ h2 {
 
 .about-signature {
   margin-top: 1.25rem;
-  font-family: "Great Vibes", "Playfair Display", serif;
-  font-size: 1.4rem;
-  color: #957f73;
+  font-family: "Great Vibes", "Cormorant Garamond", "Playfair Display", serif;
+  font-size: 1.45rem;
+  color: #866c61;
   font-style: italic;
   letter-spacing: 0.03em;
+  line-height: 1.45;
 }
 
 .section-alt {
@@ -548,6 +551,15 @@ h2 {
   .btn {
     width: 100%;
     text-align: center;
+  }
+
+  .about {
+    padding: 78px 0;
+    line-height: 1.95;
+  }
+
+  .about-title {
+    font-size: clamp(1.95rem, 8.2vw, 2.35rem);
   }
 }
 
