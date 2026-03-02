@@ -248,24 +248,32 @@ h2 {
 }
 
 .icon-badge {
-  width: 54px;
+  width: 78px;
   aspect-ratio: 1;
-  margin: 0 auto 0.7rem;
+  margin: 0 auto 0.85rem;
   display: grid;
   place-items: center;
+  position: relative;
   border-radius: 50%;
   border: 1px solid #e6cbc4;
   background: linear-gradient(155deg, #f4dedd 0%, #ebcdc8 100%);
 }
 
 .icon-badge svg {
-  width: 23px;
-  height: 23px;
+  width: 40px;
+  height: 40px;
   fill: none;
-  stroke: #7c5750;
-  stroke-width: 1.55;
+  stroke: #cda25b;
+  stroke-width: 1.7;
   stroke-linecap: round;
   stroke-linejoin: round;
+  filter: drop-shadow(0 1.5px 2px rgba(39, 25, 8, 0.35));
+}
+
+.icon-envelope-back {
+  position: absolute;
+  transform: translate(-4px, -4px);
+  opacity: 0.45;
 }
 
 .step-number {
@@ -655,13 +663,13 @@ h2 {
   }
 
   .icon-badge {
-    width: 62px;
-    margin-bottom: 0.85rem;
+    width: 86px;
+    margin-bottom: 1rem;
   }
 
   .icon-badge svg {
-    width: 26px;
-    height: 26px;
+    width: 46px;
+    height: 46px;
   }
 
   .step-number {
