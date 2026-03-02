@@ -1,12 +1,13 @@
 :root {
-  --bg: #f8f3ef;
-  --bg-soft: #fffaf6;
+  --bg: #f6efea;
+  --bg-soft: #fdf7f4;
   --text: #3d2c2b;
   --muted: #6f5a58;
   --primary: #8b4f7d;
   --primary-strong: #733f67;
   --card: #ffffff;
   --border: #ecd8d4;
+  --gold-soft: #c8a97f;
 }
 
 * {
@@ -18,7 +19,12 @@ body {
   font-family: "Inter", sans-serif;
   line-height: 1.6;
   color: var(--text);
-  background: radial-gradient(circle at top left, #fff7f3 0%, #f7ede8 42%, #f4e7e1 100%);
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(circle at 16% 12%, rgba(200, 169, 127, 0.1) 0, rgba(200, 169, 127, 0.02) 18%, transparent 42%),
+    radial-gradient(circle at 82% 18%, rgba(243, 232, 230, 0.75) 0, rgba(243, 232, 230, 0) 40%),
+    radial-gradient(circle at 14% 78%, rgba(200, 169, 127, 0.06) 0, rgba(200, 169, 127, 0) 24%),
+    linear-gradient(180deg, #f6efea 0%, #f9f2ed 45%, #f3e8e6 100%);
 }
 
 .container {
@@ -29,6 +35,22 @@ body {
 .hero {
   padding: 4rem 0 3rem;
   text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 1.2rem auto auto 6%;
+  width: min(220px, 34vw);
+  height: min(220px, 34vw);
+  opacity: 0.16;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle at 32% 34%, rgba(200, 169, 127, 0.5) 0 4px, transparent 4px),
+    radial-gradient(circle at 68% 44%, rgba(139, 79, 125, 0.2) 0 3px, transparent 3px),
+    radial-gradient(circle at 50% 70%, rgba(200, 169, 127, 0.42) 0 5px, transparent 5px);
+  filter: blur(0.3px);
 }
 
 h1,
@@ -39,7 +61,13 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(2rem, 4vw, 3.6rem);
+  font-family: "Great Vibes", "Playfair Display", cursive;
+  font-size: clamp(1.75rem, 3.3vw, 2.7rem);
+  letter-spacing: 0.05em;
+  line-height: 1.25;
+  font-weight: 400;
+  color: #5b3b40;
+  margin-bottom: 0.5rem;
 }
 
 h2 {
@@ -47,10 +75,13 @@ h2 {
 }
 
 .tagline {
-  font-size: clamp(1.1rem, 2.4vw, 1.6rem);
-  font-weight: 600;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  font-weight: 500;
+  letter-spacing: 0.02em;
   color: var(--primary-strong);
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
 }
 
 .lead {
@@ -168,7 +199,8 @@ ul {
   }
 
   h1 {
-    font-size: clamp(1.75rem, 8.5vw, 2.3rem);
+    font-size: clamp(1.45rem, 7.2vw, 2rem);
+    letter-spacing: 0.04em;
   }
 
   h2 {
