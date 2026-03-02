@@ -247,27 +247,45 @@ h2 {
   box-shadow: 0 8px 18px rgba(93, 59, 84, 0.08);
 }
 
+.how-step {
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
 .icon-badge {
-  width: 78px;
+  width: 84px;
   aspect-ratio: 1;
-  margin: 0 auto 0.85rem;
+  margin: 0 auto 0.95rem;
   display: grid;
   place-items: center;
   position: relative;
   border-radius: 50%;
   border: 1px solid #e6cbc4;
-  background: linear-gradient(155deg, #f4dedd 0%, #ebcdc8 100%);
+  background: radial-gradient(circle at 30% 30%, #f3d9d2, #e7c2b8);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.icon-sparkle {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  background: #c6a052;
+  box-shadow: 0 0 0 2px rgba(255, 249, 236, 0.65);
 }
 
 .icon-badge svg {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   fill: none;
-  stroke: #cda25b;
-  stroke-width: 1.7;
+  stroke: #c6a052;
+  stroke-width: 1.95;
   stroke-linecap: round;
   stroke-linejoin: round;
-  filter: drop-shadow(0 1.5px 2px rgba(39, 25, 8, 0.35));
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.25));
 }
 
 .icon-envelope-back {
@@ -296,6 +314,22 @@ h2 {
   margin: 0;
   color: #5f4d4a;
   font-size: 0.95rem;
+}
+
+@media (min-width: 1024px) {
+  .how-step + .how-step {
+    position: relative;
+  }
+
+  .how-step + .how-step::before {
+    content: "";
+    position: absolute;
+    top: -0.9rem;
+    left: 12%;
+    right: 12%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(198, 160, 82, 0.32), transparent);
+  }
 }
 
 .examples {
@@ -585,6 +619,14 @@ h2 {
     padding: 1.15rem;
   }
 
+  .how-step {
+    padding: 1.35rem 1.2rem;
+  }
+
+  .how-step p {
+    font-size: 0.9rem;
+  }
+
   .price {
     font-size: clamp(1.8rem, 10.8vw, 2.2rem);
   }
@@ -663,13 +705,13 @@ h2 {
   }
 
   .icon-badge {
-    width: 86px;
+    width: 92px;
     margin-bottom: 1rem;
   }
 
   .icon-badge svg {
-    width: 46px;
-    height: 46px;
+    width: 50px;
+    height: 50px;
   }
 
   .step-number {
