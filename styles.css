@@ -122,6 +122,62 @@ h2 {
   width: auto;
 }
 
+.why-choose {
+  background: linear-gradient(160deg, #fffaf6 0%, #f8eee8 100%);
+  border-top: 1px solid #ecdcd6;
+}
+
+.why-choose-inner {
+  text-align: center;
+  max-width: 760px;
+}
+
+.why-choose h2 {
+  margin-bottom: 0.35rem;
+  color: #4e3533;
+}
+
+.why-choose-subtitle {
+  margin: 0 auto 1.5rem;
+  max-width: 58ch;
+  color: #715d5a;
+}
+
+.why-choose-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.8rem;
+}
+
+.why-choose-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid #ecd9d2;
+  border-radius: 14px;
+  background: linear-gradient(155deg, #fffdfb 0%, #fdf5f0 100%);
+  color: #584746;
+  box-shadow: 0 8px 16px rgba(96, 60, 82, 0.08);
+  text-align: left;
+}
+
+.why-check {
+  display: inline-grid;
+  place-items: center;
+  width: 1.35rem;
+  height: 1.35rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #f3e0db;
+  color: #8b5f73;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
 .hero-link {
   color: var(--primary-strong);
   font-weight: 600;
@@ -837,6 +893,10 @@ h2 {
 
   .price-features li { text-align: left; }
 
+  .why-choose-list li {
+    padding: 0.85rem 0.9rem;
+  }
+
   .btn {
     width: 100%;
     text-align: center;
@@ -871,6 +931,11 @@ h2 {
   .examples-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.45rem;
+  }
+
+  .why-choose-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
   }
 
   .price-card {
