@@ -1000,6 +1000,11 @@ h2 {
 }
 
 @media (min-width: 1024px) {
+  .pricing-options {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.35rem;
+  }
+
   .testimonials-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.35rem;
