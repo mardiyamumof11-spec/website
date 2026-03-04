@@ -680,13 +680,19 @@ h2 {
   font-style: italic;
 }
 
+.premium-detail {
+  margin: -0.5rem 0 0.8rem;
+  color: #6d5754;
+  font-size: 0.9rem;
+}
+
 .pricing-trust {
   margin: 0.15rem 0 0.55rem;
   text-align: center;
   font-family: "Playfair Display", Georgia, serif;
   font-style: italic;
-  color: #7e6763;
-  font-size: 0.94rem;
+  color: #5f4643;
+  font-size: 1.1rem;
 }
 
 .feature-icon {
@@ -723,6 +729,12 @@ h2 {
   max-width: 48ch;
   color: #6f5957;
   font-size: 0.95rem;
+}
+
+.order-touch {
+  margin-top: -0.15rem;
+  color: #7f6763;
+  font-size: 0.83rem;
 }
 
 .order-actions {
