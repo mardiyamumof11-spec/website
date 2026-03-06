@@ -767,6 +767,14 @@ h2 {
   text-align: center;
 }
 
+.paypal-btn {
+  display: block;
+  width: min(440px, 100%);
+  margin: 0.85rem auto 0;
+  border-radius: 18px;
+  text-align: center;
+}
+
 .paypal-inline a {
   display: inline-flex;
   align-items: center;
