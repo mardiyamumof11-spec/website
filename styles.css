@@ -740,6 +740,13 @@ h2 {
   font-size: 1.05rem;
 }
 
+
+.order-reply-note {
+  margin-top: -0.2rem;
+  color: #8a7a77;
+  font-size: 1rem;
+}
+
 .order-actions {
   margin-top: 1.5rem;
   display: flex;
