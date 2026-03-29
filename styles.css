@@ -570,6 +570,8 @@ h2 {
 
 .price-card {
   text-align: left;
+  display: flex;
+  flex-direction: column;
   border-radius: 20px;
   border: 1px solid #ecd9d2;
   padding: 1.6rem 1.35rem 1.35rem;
@@ -662,6 +664,10 @@ h2 {
   padding: 0;
   display: grid;
   gap: 0.8rem;
+}
+
+.price-card .btn {
+  margin-top: auto;
 }
 
 .price-features li {
@@ -872,6 +878,27 @@ h2 {
   background: linear-gradient(160deg, #f0e5dc 0%, #dfcdc0 100%);
   transform: translateY(-2px);
   box-shadow: 0 13px 24px rgba(90, 56, 76, 0.2);
+}
+
+.btn-price-select {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  background: linear-gradient(160deg, #c798a0 0%, #b9858f 100%);
+  color: #fffaf7;
+  box-shadow: 0 10px 20px rgba(131, 81, 97, 0.24);
+}
+
+.btn-price-select:hover {
+  background: linear-gradient(160deg, #be8f98 0%, #ac7883 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 24px rgba(120, 73, 88, 0.26);
+}
+
+.btn-price-select:active {
+  transform: translateY(1px);
+  box-shadow: 0 6px 12px rgba(120, 73, 88, 0.22);
 }
 
 .btn-tertiary {
