@@ -284,30 +284,6 @@ h2 {
 }
 
 
-.intro-service {
-  background: linear-gradient(165deg, #fff8f3 0%, #f8ece6 100%);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
-
-.intro-service-inner {
-  width: min(820px, 92%);
-  text-align: center;
-}
-
-.intro-service h2 {
-  margin-bottom: 1.3rem;
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(2rem, 5vw, 2.85rem);
-  color: #4e2f44;
-}
-
-.intro-service p {
-  margin: 0 0 1rem;
-  color: #4a3533;
-}
-
-
 .section-alt {
   background: var(--bg-soft);
   border-top: 1px solid var(--border);
