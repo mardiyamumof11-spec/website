@@ -614,6 +614,45 @@ h2 {
   margin-bottom: 1.2rem;
 }
 
+.printed-april-note {
+  margin: 0 auto 1.15rem;
+  text-align: center;
+  max-width: 62ch;
+  color: #7b5a67;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.printed-offer-badge {
+  margin: 0 0 0.6rem;
+  display: inline-block;
+  width: fit-content;
+  padding: 0.34rem 0.7rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #f7e0e8 0%, #fceef4 100%);
+  border: 1px solid #ecc9d9;
+  color: #9b5f7a;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.price-stack {
+  display: grid;
+  gap: 0.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.price-old {
+  margin: 0;
+  font-size: 0.96rem;
+  color: #9d7f86;
+  text-decoration: line-through;
+  text-decoration-thickness: 1.5px;
+  text-decoration-color: #aa7387;
+}
+
 .price-divider {
   width: min(170px, 58%);
   height: 1px;
@@ -1068,6 +1107,15 @@ h2 {
     font-size: 1rem;
   }
 
+  .printed-april-note {
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+  }
+
+  .printed-offer-badge {
+    font-size: 0.75rem;
+  }
+
   .price-features {
     gap: 0.95rem;
     margin-bottom: 1.4rem;
@@ -1138,6 +1186,10 @@ h2 {
 
   .pricing-title {
     font-size: 1.95rem;
+  }
+
+  .printed-april-note {
+    margin-bottom: 1.35rem;
   }
 
   .price {
