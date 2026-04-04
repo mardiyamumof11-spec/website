@@ -697,6 +697,18 @@ h2 {
   font-size: 0.95rem;
 }
 
+.special-price {
+  margin: 0 0 0.95rem;
+  color: #7b5a67;
+  font-size: 0.95rem;
+}
+
+.special-price strong {
+  color: #c9ab6f;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 600;
+}
+
 .price-features {
   list-style: none;
   margin: 0 0 1.2rem;
