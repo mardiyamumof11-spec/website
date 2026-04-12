@@ -468,11 +468,13 @@ h2 {
 
 .examples-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 420px);
   gap: 1.2rem;
+  justify-content: center;
 }
 
 .example-card {
+  width: min(100%, 420px);
   background: linear-gradient(160deg, #fffefc 0%, #fdf6f2 100%);
   border: 1px solid #ecd9d2;
   border-radius: 22px;
@@ -1097,8 +1099,9 @@ h2 {
   }
 
   .examples-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 420px);
     gap: 1.45rem;
+    justify-content: center;
   }
 
   .why-choose-list {
@@ -1188,8 +1191,9 @@ h2 {
   }
 
   .examples-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 420px);
     gap: 1.55rem;
+    justify-content: center;
   }
 
   .price-card {
