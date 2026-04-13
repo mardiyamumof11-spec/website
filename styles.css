@@ -226,7 +226,7 @@ h2 {
   background: linear-gradient(180deg, #fdf7f3 0%, #f8efe8 55%, #fdf8f4 100%);
   color: #3a2924;
   text-align: center;
-  line-height: 1.9;
+  line-height: 2.08;
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 700ms ease, transform 700ms ease;
@@ -241,47 +241,34 @@ h2 {
   width: min(750px, 92%);
 }
 
-.about-small {
-  margin: 0;
-  font-family: "Playfair Display", Georgia, serif;
-  font-style: italic;
-  font-size: 0.95rem;
-  letter-spacing: 0.08em;
-  color: #8a6f67;
-}
-
 .about-title {
-  margin: 0.3rem 0 1.3rem;
-  font-family: "Cormorant Garamond", "Playfair Display", Georgia, serif;
-  font-size: clamp(2rem, 5vw, 2.8rem);
-  letter-spacing: 0.06em;
+  margin: 0.2rem 0 1.4rem;
+  font-family: "Great Vibes", "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  font-size: clamp(2.2rem, 5.5vw, 3.15rem);
+  letter-spacing: 0.03em;
   font-weight: 600;
-  background: linear-gradient(100deg, #f3dfaa 0%, #d1ab5f 45%, #a77a2f 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.22);
+  color: #b68834;
+  text-shadow: 0 3px 14px rgba(0, 0, 0, 0.1);
 }
 
 .about p {
   margin: 0 0 1rem;
   color: #2f201c;
-  font-family: "Inter", "Lato", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(0.97rem, 2.8vw, 1.04rem);
+  line-height: 2.08;
 }
 
 .about-intro {
-  font-size: 1.06rem;
+  font-size: clamp(1rem, 2.95vw, 1.1rem);
 }
 
 .about-signature {
   margin-top: 1.25rem;
-  font-family: "Great Vibes", "Cormorant Garamond", "Playfair Display", serif;
-  font-size: clamp(1.35rem, 4.8vw, 1.55rem);
-  color: #866c61;
+  color: #6f5147;
   font-style: italic;
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  line-height: 1.5;
+  font-size: clamp(1rem, 2.95vw, 1.1rem);
+  letter-spacing: 0.01em;
 }
 
 
@@ -1079,11 +1066,11 @@ h2 {
 
   .about {
     padding: 78px 0;
-    line-height: 1.95;
+    line-height: 2.14;
   }
 
   .about-title {
-    font-size: clamp(1.95rem, 8.2vw, 2.35rem);
+    font-size: clamp(2.15rem, 10vw, 2.7rem);
   }
 }
 
