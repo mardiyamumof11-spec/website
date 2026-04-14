@@ -624,12 +624,12 @@ h2 {
 
 .eid-offer-callout {
   margin: 0 auto 1.4rem;
-  padding: 1.2rem 1rem 1.3rem;
+  padding: 1.6rem 1.35rem 1.35rem;
   text-align: center;
   border-radius: 20px;
-  border: 1px solid #ecced9;
-  background: linear-gradient(145deg, #fff8f5 0%, #fceef3 55%, #f8e7ea 100%);
-  box-shadow: 0 16px 28px rgba(146, 93, 110, 0.14);
+  border: 1px solid #ecd9d2;
+  background: linear-gradient(150deg, #fffdf9 0%, #fdf3ef 60%, #f9ece9 100%);
+  box-shadow: 0 18px 36px rgba(90, 56, 76, 0.12);
 }
 
 .eid-offer-callout h3 {
@@ -1154,7 +1154,7 @@ h2 {
 
   .eid-offer-callout {
     margin-bottom: 1.55rem;
-    padding: 1.35rem 1.25rem 1.4rem;
+    padding: 1.7rem 1.5rem 1.45rem;
   }
 
   .printed-offer-badge {
