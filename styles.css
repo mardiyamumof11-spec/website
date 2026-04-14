@@ -622,6 +622,34 @@ h2 {
   line-height: 1.6;
 }
 
+.eid-offer-callout {
+  margin: 0 auto 1.4rem;
+  padding: 1.2rem 1rem 1.3rem;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid #ecced9;
+  background: linear-gradient(145deg, #fff8f5 0%, #fceef3 55%, #f8e7ea 100%);
+  box-shadow: 0 16px 28px rgba(146, 93, 110, 0.14);
+}
+
+.eid-offer-callout h3 {
+  margin: 0 0 0.55rem;
+  color: #a66b85;
+  font-size: clamp(0.9rem, 3.7vw, 1.06rem);
+  letter-spacing: 0.04em;
+  line-height: 1.45;
+}
+
+.eid-offer-callout p {
+  margin: 0 0 0.95rem;
+  color: #6a4d58;
+  font-size: 1rem;
+}
+
+.eid-offer-btn {
+  min-width: 170px;
+}
+
 .printed-offer-badge {
   margin: 0 0 0.6rem;
   display: inline-block;
@@ -1124,6 +1152,11 @@ h2 {
     font-size: 1rem;
   }
 
+  .eid-offer-callout {
+    margin-bottom: 1.55rem;
+    padding: 1.35rem 1.25rem 1.4rem;
+  }
+
   .printed-offer-badge {
     font-size: 0.75rem;
   }
@@ -1203,6 +1236,10 @@ h2 {
 
   .printed-april-note {
     margin-bottom: 1.35rem;
+  }
+
+  .eid-offer-callout {
+    margin-bottom: 1.7rem;
   }
 
   .price {
