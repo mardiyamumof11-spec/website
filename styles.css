@@ -879,7 +879,7 @@ h2 {
   text-align: center;
 }
 
-.payment-policy {
+.policy-card {
   width: min(520px, 100%);
   margin: 1rem auto 0;
   padding: 1rem 1.1rem;
@@ -889,22 +889,37 @@ h2 {
   text-align: left;
 }
 
-.payment-policy h4 {
+.policy-card h3 {
   margin: 0 0 0.6rem;
   font-family: "Playfair Display", Georgia, serif;
   font-size: clamp(1.1rem, 3.6vw, 1.3rem);
   color: #5d4442;
 }
 
-.payment-policy p {
+.policy-card h3 + p {
+  margin-top: 0;
+}
+
+.policy-card p {
   margin: 0;
   color: #705c59;
   font-size: 0.95rem;
   line-height: 1.65;
 }
 
-.payment-policy p + p {
+.policy-card p + p {
   margin-top: 0.45rem;
+}
+
+.policy-card h3 + p,
+.policy-card p + h3 {
+  margin-top: 0.6rem;
+}
+
+.policy-card .thank-you {
+  margin-top: 0.8rem;
+  color: #684d4a;
+  font-weight: 500;
 }
 
 .paypal-inline a {
