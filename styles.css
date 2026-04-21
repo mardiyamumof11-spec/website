@@ -211,39 +211,18 @@ h2 {
   color: #64385a;
 }
 
-.top-poster {
-  margin: 1.9rem auto 0;
-  width: min(1040px, 100%);
-  padding: clamp(0.9rem, 2.3vw, 1.2rem);
-  border: 1px solid #ecd9d2;
-  border-radius: 24px;
-  background: linear-gradient(150deg, #fffdfb 0%, #fdf4ef 55%, #f8ece8 100%);
-  box-shadow: 0 14px 28px rgba(115, 63, 103, 0.12);
-  display: grid;
-  grid-template-columns: minmax(0, 24ch) minmax(0, 1fr);
-  align-items: center;
-  gap: clamp(0.8rem, 2vw, 1.4rem);
-  overflow: hidden;
+.hero-photo {
+  margin: 1.2rem auto 0;
+  width: min(760px, 100%);
 }
 
-.top-poster p {
-  margin: 0;
-  padding-left: clamp(0.2rem, 1vw, 0.55rem);
-  color: #5a4644;
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(1.02rem, 2.2vw, 1.28rem);
-  line-height: 1.62;
-  text-align: left;
-  text-wrap: balance;
-}
-
-.top-poster-art {
+.hero-photo-image {
   width: 100%;
-  min-height: clamp(220px, 30vw, 360px);
-  height: 100%;
-  border-radius: 16px;
+  min-height: clamp(220px, 30vw, 410px);
+  border-radius: 22px;
   object-fit: cover;
   object-position: center;
+  box-shadow: 0 14px 28px rgba(115, 63, 103, 0.12);
 }
 
 .section {
@@ -1123,9 +1102,8 @@ h2 {
     padding: 2.75rem 0;
   }
 
-  .top-poster {
+  .hero-photo {
     margin-top: 1.5rem;
-    border-radius: 18px;
   }
 }
 
@@ -1172,25 +1150,13 @@ h2 {
     line-height: 1.55;
   }
 
-  .top-poster {
-    gap: 0.8rem;
-    align-items: center;
+  .hero-photo {
+    margin-top: 1.35rem;
   }
 
-  .top-poster {
-    grid-template-columns: 1fr;
-    gap: 0.7rem;
-    padding: 0.8rem;
-  }
-
-  .top-poster p {
-    max-width: 100%;
-    padding: 0.25rem 0.35rem 0;
-    text-align: center;
-  }
-
-  .top-poster-art {
+  .hero-photo-image {
     min-height: 210px;
+    border-radius: 18px;
   }
 
   .how-step,
@@ -1237,12 +1203,9 @@ h2 {
 }
 
 @media (max-width: 420px) {
-  .top-poster {
-    border-radius: 18px;
-  }
-
-  .top-poster-art {
+  .hero-photo-image {
     min-height: 180px;
+    border-radius: 16px;
   }
 }
 
