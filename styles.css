@@ -673,6 +673,14 @@ h2 {
   font-size: 1rem;
 }
 
+.eid-offer-copy {
+  max-width: 33ch;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.55;
+  text-wrap: balance;
+}
+
 .eid-offer-btn {
   min-width: 170px;
 }
@@ -1215,6 +1223,10 @@ h2 {
   .eid-offer-callout {
     margin-bottom: 1.55rem;
     padding: 1.7rem 1.5rem 1.45rem;
+  }
+
+  .eid-offer-copy {
+    max-width: none;
   }
 
   .printed-offer-badge {
