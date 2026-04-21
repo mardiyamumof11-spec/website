@@ -96,6 +96,15 @@ h2 {
   color: var(--primary-strong);
 }
 
+.hero-intro-line {
+  margin: 0.15rem auto 0.25rem;
+  max-width: 760px;
+  color: #70595a;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(0.98rem, 2.8vw, 1.1rem);
+  line-height: 1.65;
+}
+
 .hero-badge {
   margin: 0.1rem 0 0;
   padding: 0.32rem 0.8rem;
@@ -202,22 +211,22 @@ h2 {
   color: #64385a;
 }
 
-.top-gallery {
-  margin: 2rem auto 0;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 1rem;
-  max-width: 420px;
+.top-poster {
+  margin: 1.9rem auto 0;
+  width: min(760px, 100%);
+  padding: clamp(1.25rem, 3.4vw, 2rem) clamp(1rem, 3vw, 2.2rem);
+  border: 1px solid #ecd9d2;
+  border-radius: 22px;
+  background: linear-gradient(150deg, #fffdfb 0%, #fdf4ef 55%, #f8ece8 100%);
+  box-shadow: 0 12px 26px rgba(115, 63, 103, 0.11);
 }
 
-.top-gallery img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 16px;
-  border: 1px solid var(--border);
-  box-shadow: 0 10px 22px rgba(115, 63, 103, 0.12);
-  background: #fff;
+.top-poster p {
+  margin: 0;
+  color: #5a4644;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.08rem, 3.2vw, 1.42rem);
+  line-height: 1.6;
 }
 
 .section {
@@ -438,6 +447,15 @@ h2 {
   text-align: center;
 }
 
+.examples-softline {
+  margin: 0 auto 0.5rem;
+  max-width: 60ch;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  color: #7e6160;
+  font-size: clamp(1rem, 2.6vw, 1.08rem);
+}
+
 .examples-topline {
   margin: 0;
   font-family: "Playfair Display", Georgia, serif;
@@ -599,6 +617,15 @@ h2 {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.pricing-softline {
+  margin: -0.2rem auto 1.2rem;
+  max-width: 62ch;
+  text-align: center;
+  color: #765f5f;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
 }
 
 .pricing-title {
@@ -823,6 +850,15 @@ h2 {
   color: #6f4d4a;
 }
 
+.order-trust-line {
+  margin: 0.2rem auto 1.2rem;
+  max-width: 45ch;
+  color: #6f5654;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-size: 1rem;
+}
+
 .order-ready p {
   margin: 0.35rem auto 1rem;
   max-width: 52ch;
@@ -1043,12 +1079,9 @@ h2 {
     padding: 2.75rem 0;
   }
 
-  .top-gallery {
-    grid-template-columns: 1fr;
-  }
-
-  .top-gallery img {
-    height: auto;
+  .top-poster {
+    margin-top: 1.5rem;
+    border-radius: 18px;
   }
 }
 
@@ -1090,9 +1123,9 @@ h2 {
     width: 100%;
   }
 
-  .hero-link {
-    padding: 0.3rem 0;
-    font-size: 0.96rem;
+  .hero-intro-line {
+    font-size: 0.98rem;
+    line-height: 1.55;
   }
 
   .how-step,
@@ -1165,7 +1198,7 @@ h2 {
     padding: 1.7rem 1.5rem 1.45rem;
   }
 
-  .pricing-title {
+.pricing-title {
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
   }
@@ -1257,7 +1290,7 @@ h2 {
     padding: 1.9rem 1.7rem 1.6rem;
   }
 
-  .pricing-title {
+.pricing-title {
     font-size: 1.95rem;
   }
 
