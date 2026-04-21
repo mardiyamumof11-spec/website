@@ -1,0 +1,96 @@
+<svg width="1600" height="720" viewBox="0 0 1600 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Elegant writing desk with personalised poetry keepsakes</title>
+  <desc id="desc">Soft blush and cream premium banner illustration showing a writing desk with notebook, framed cards, tea cup and warm subtle Eid inspired details.</desc>
+  <defs>
+    <linearGradient id="bg" x1="210" y1="58" x2="1379" y2="675" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF8F3"/>
+      <stop offset="0.48" stop-color="#F8ECE6"/>
+      <stop offset="1" stop-color="#F4E7DF"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1258 174) rotate(109.677) scale(208.164 392.576)">
+      <stop stop-color="#FFF6DE" stop-opacity="0.84"/>
+      <stop offset="1" stop-color="#FFF6DE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(354 130) rotate(112.405) scale(254.466 478.248)">
+      <stop stop-color="#F6DDE2" stop-opacity="0.74"/>
+      <stop offset="1" stop-color="#F6DDE2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="table" x1="266" y1="450" x2="1315" y2="737" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFE0D5"/>
+      <stop offset="1" stop-color="#E9D4C6"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFCF8"/>
+      <stop offset="1" stop-color="#F6ECE3"/>
+    </linearGradient>
+    <linearGradient id="notebook" x1="770" y1="356" x2="1098" y2="584" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF6EE"/>
+      <stop offset="1" stop-color="#F2E3D7"/>
+    </linearGradient>
+    <filter id="softShadow" x="0" y="0" width="1700" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="15" stdDeviation="18" flood-color="#8B6470" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="720" fill="url(#bg)"/>
+  <rect width="1600" height="720" fill="url(#glowA)"/>
+  <rect width="1600" height="720" fill="url(#glowB)"/>
+
+  <g opacity="0.38" fill="#D7B374">
+    <circle cx="1240" cy="117" r="3"/>
+    <circle cx="1282" cy="146" r="2.4"/>
+    <circle cx="1193" cy="169" r="2.1"/>
+    <circle cx="377" cy="98" r="2.8"/>
+    <circle cx="345" cy="137" r="2.2"/>
+    <circle cx="422" cy="152" r="2.6"/>
+  </g>
+
+  <g opacity="0.32" stroke="#D4B179" stroke-linecap="round">
+    <path d="M1173 130C1183 136 1190 146 1191 159"/>
+    <path d="M1162 150C1172 158 1179 168 1180 180"/>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="180" y="438" width="1240" height="212" rx="26" fill="url(#table)"/>
+
+    <rect x="318" y="345" width="268" height="176" rx="16" fill="url(#card)"/>
+    <rect x="332" y="359" width="239" height="147" rx="11" fill="#FFF8F2" stroke="#EAD7C6"/>
+    <line x1="356" y1="395" x2="540" y2="395" stroke="#CBA77A" stroke-width="2" stroke-linecap="round"/>
+    <line x1="356" y1="427" x2="531" y2="427" stroke="#DBC4AE" stroke-width="2" stroke-linecap="round"/>
+    <line x1="356" y1="456" x2="510" y2="456" stroke="#E3CEC0" stroke-width="2" stroke-linecap="round"/>
+
+    <rect x="598" y="300" width="238" height="242" rx="18" fill="url(#card)"/>
+    <rect x="617" y="320" width="198" height="200" rx="12" fill="#FFF8F2" stroke="#E9D5C7"/>
+    <rect x="648" y="353" width="136" height="26" rx="8" fill="#F6E9DF"/>
+    <rect x="660" y="424" width="112" height="7" rx="3.5" fill="#CFAF8C" opacity="0.7"/>
+    <rect x="660" y="444" width="92" height="7" rx="3.5" fill="#D8BF9F" opacity="0.6"/>
+
+    <g>
+      <rect x="840" y="346" width="362" height="206" rx="24" transform="rotate(2 840 346)" fill="url(#notebook)"/>
+      <rect x="860" y="364" width="322" height="168" rx="16" transform="rotate(2 860 364)" fill="#FFF9F3" stroke="#E8D8C8"/>
+      <line x1="902" y1="412" x2="1116" y2="420" stroke="#D4B38E" stroke-width="3" stroke-linecap="round"/>
+      <line x1="902" y1="447" x2="1132" y2="455" stroke="#E2CBB5" stroke-width="3" stroke-linecap="round"/>
+      <line x1="902" y1="481" x2="1085" y2="489" stroke="#E2CBB5" stroke-width="3" stroke-linecap="round"/>
+      <path d="M923 529C959 512 997 516 1028 540" stroke="#C39A74" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="985" cy="356" r="9" fill="#EEDCCA"/>
+      <circle cx="1016" cy="359" r="9" fill="#EEDCCA"/>
+      <circle cx="1047" cy="362" r="9" fill="#EEDCCA"/>
+    </g>
+
+    <g>
+      <ellipse cx="1298" cy="490" rx="72" ry="22" fill="#DCC1A7" opacity="0.45"/>
+      <rect x="1242" y="390" width="96" height="98" rx="18" fill="#FBF1E8"/>
+      <rect x="1255" y="404" width="70" height="70" rx="13" fill="#FFF8F3" stroke="#EBD9CA"/>
+      <path d="M1322 433C1338 435 1350 449 1350 466C1350 484 1336 499 1318 499H1262" stroke="#DFC6AF" stroke-width="8" stroke-linecap="round"/>
+      <path d="M1272 438C1288 446 1300 457 1310 475" stroke="#D3B089" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+    </g>
+
+    <g>
+      <rect x="1098" y="286" width="120" height="88" rx="10" fill="#FFF8F2" stroke="#E8D2BF"/>
+      <rect x="1112" y="300" width="92" height="60" rx="8" fill="#F8ECE1"/>
+      <path d="M1127 344L1148 325L1169 344L1190 325" stroke="#C8A07A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <rect x="0" y="0" width="560" height="720" fill="url(#glowB)" opacity="0.45"/>
+</svg>

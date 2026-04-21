@@ -213,102 +213,37 @@ h2 {
 
 .top-poster {
   margin: 1.9rem auto 0;
-  width: min(760px, 100%);
-  padding: clamp(1.25rem, 3.4vw, 2rem) clamp(1rem, 3vw, 2.2rem);
+  width: min(1040px, 100%);
+  padding: clamp(0.9rem, 2.3vw, 1.2rem);
   border: 1px solid #ecd9d2;
-  border-radius: 22px;
+  border-radius: 24px;
   background: linear-gradient(150deg, #fffdfb 0%, #fdf4ef 55%, #f8ece8 100%);
-  box-shadow: 0 12px 26px rgba(115, 63, 103, 0.11);
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 1.2rem;
+  box-shadow: 0 14px 28px rgba(115, 63, 103, 0.12);
+  display: grid;
+  grid-template-columns: minmax(0, 24ch) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(0.8rem, 2vw, 1.4rem);
   overflow: hidden;
 }
 
 .top-poster p {
   margin: 0;
+  padding-left: clamp(0.2rem, 1vw, 0.55rem);
   color: #5a4644;
   font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(1.08rem, 3.2vw, 1.42rem);
-  line-height: 1.6;
+  font-size: clamp(1.02rem, 2.2vw, 1.28rem);
+  line-height: 1.62;
   text-align: left;
-  max-width: 30ch;
+  text-wrap: balance;
 }
 
-.banner-figure {
-  position: relative;
-  width: clamp(130px, 22vw, 180px);
-  height: clamp(145px, 24vw, 200px);
-  flex-shrink: 0;
-  margin-right: clamp(0rem, 1vw, 0.8rem);
-  filter: drop-shadow(0 8px 15px rgba(85, 58, 72, 0.12));
-}
-
-.figure-head {
-  position: absolute;
-  top: 26%;
-  left: 58%;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  background: #d8a58f;
-  transform: translate(-50%, -50%);
-}
-
-.figure-hijab {
-  position: absolute;
-  top: 11%;
-  left: 41%;
-  width: 95px;
-  height: 118px;
-  border-radius: 54% 62% 58% 48%;
-  background: linear-gradient(165deg, #9a6f88 0%, #835a73 45%, #6f4b62 100%);
-  transform: rotate(11deg);
-}
-
-.figure-torso {
-  position: absolute;
-  bottom: 10%;
-  left: 33%;
-  width: 108px;
-  height: 88px;
-  border-radius: 60% 48% 28% 45%;
-  background: linear-gradient(160deg, #be94a5 0%, #a87f91 55%, #8e6779 100%);
-  transform: rotate(5deg);
-}
-
-.figure-writing-arm {
-  position: absolute;
-  right: 12%;
-  bottom: 24%;
-  width: 68px;
-  height: 20px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, #d3a18b 0%, #e4b8a0 100%);
-  transform: rotate(-17deg);
-  transform-origin: left center;
-}
-
-.figure-book {
-  position: absolute;
-  right: 0;
-  bottom: 12%;
-  width: 72px;
-  height: 42px;
-  border-radius: 10px;
-  background: linear-gradient(155deg, #f4e4d8 0%, #ecdbcd 100%);
-  box-shadow: inset -1px 0 0 rgba(127, 89, 105, 0.2);
-}
-
-.figure-book::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 5px;
-  width: 1px;
-  height: 30px;
-  background: rgba(126, 86, 103, 0.22);
+.top-poster-art {
+  width: 100%;
+  min-height: clamp(220px, 30vw, 360px);
+  height: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .section {
@@ -1242,13 +1177,20 @@ h2 {
     align-items: center;
   }
 
-  .top-poster p {
-    max-width: 22ch;
+  .top-poster {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+    padding: 0.8rem;
   }
 
-  .banner-figure {
-    width: 112px;
-    height: 140px;
+  .top-poster p {
+    max-width: 100%;
+    padding: 0.25rem 0.35rem 0;
+    text-align: center;
+  }
+
+  .top-poster-art {
+    min-height: 210px;
   }
 
   .how-step,
@@ -1296,16 +1238,11 @@ h2 {
 
 @media (max-width: 420px) {
   .top-poster {
-    justify-content: center;
+    border-radius: 18px;
   }
 
-  .top-poster p {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .banner-figure {
-    display: none;
+  .top-poster-art {
+    min-height: 180px;
   }
 }
 
