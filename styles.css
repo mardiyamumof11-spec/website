@@ -829,9 +829,12 @@ h2 {
 }
 
 .premium-detail {
-  margin: -0.5rem 0 0.8rem;
-  color: #6d5754;
-  font-size: 0.9rem;
+  margin: 0.4rem 0 1.05rem;
+  color: #c9ab6f;
+  font-size: 1.03rem;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7), 0 0 10px rgba(201, 171, 111, 0.18);
 }
 
 .pricing-trust {
