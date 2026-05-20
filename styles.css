@@ -602,6 +602,30 @@ h2 {
   box-shadow: 0 16px 32px rgba(182, 144, 105, 0.24);
 }
 
+.price-card-hajj {
+  border: 1px solid #e3c18f;
+  background: linear-gradient(155deg, #fffaf7 0%, #fdf0f2 58%, #f9ebe6 100%);
+  box-shadow: 0 18px 36px rgba(168, 126, 86, 0.2);
+}
+
+.price-offer-heading {
+  margin: 0 0 0.8rem;
+  font-family: "Playfair Display", Georgia, serif;
+  color: #8d6473;
+  font-size: clamp(1.08rem, 2.2vw, 1.23rem);
+  text-align: center;
+  line-height: 1.45;
+}
+
+.price-card-image {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid #ecd6cf;
+  box-shadow: 0 10px 20px rgba(101, 70, 65, 0.14);
+  margin: 0 0 0.95rem;
+  object-fit: cover;
+}
+
 .popular-badge {
   margin: 0 0 0.45rem;
   display: inline-block;
