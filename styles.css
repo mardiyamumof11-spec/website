@@ -1063,8 +1063,9 @@ h2 {
 
 .about-image {
   display: block;
-  width: min(108px, 30vw);
-  margin: 1rem auto 0;
+  width: min(220px, 32vw);
+  max-width: 100%;
+  margin: 1.25rem auto;
   border-radius: 14px;
   border: 1px solid #f0dfe6;
   box-shadow: 0 8px 14px rgba(176, 132, 153, 0.14);
@@ -1191,6 +1192,14 @@ h2 {
 
   .about-title {
     font-size: clamp(2.15rem, 10vw, 2.7rem);
+  }
+
+  .about-image {
+    width: min(42vw, 150px);
+    max-width: 150px;
+    min-width: 120px;
+    margin: 1.1rem auto 1.4rem;
+    border-radius: 12px;
   }
 }
 
