@@ -1061,14 +1061,16 @@ h2 {
   text-align: center;
 }
 
-.about-image {
+.footer-image {
   display: block;
-  width: min(220px, 32vw);
+  width: clamp(82px, 10vw, 104px);
   max-width: 100%;
-  margin: 1.25rem auto;
-  border-radius: 14px;
+  margin: 0.95rem auto 0;
+  border-radius: 12px;
   border: 1px solid #f0dfe6;
-  box-shadow: 0 8px 14px rgba(176, 132, 153, 0.14);
+  box-shadow: 0 6px 11px rgba(176, 132, 153, 0.12);
+  opacity: 0.92;
+  object-fit: cover;
 }
 
 
@@ -1099,6 +1101,11 @@ h2 {
     width: min(1100px, 94%);
   }
 
+  .footer-image {
+    width: clamp(70px, 24vw, 90px);
+    margin-top: 0.9rem;
+  }
+
   .hero {
     padding: 2.9rem 0 2.2rem;
   }
@@ -1123,11 +1130,6 @@ h2 {
     letter-spacing: 0.05em;
   }
 
-  .about-image {
-    width: min(96px, 42vw);
-    margin-top: 0.85rem;
-    border-radius: 12px;
-  }
 
   .hero-actions {
     width: 100%;
@@ -1194,13 +1196,6 @@ h2 {
     font-size: clamp(2.15rem, 10vw, 2.7rem);
   }
 
-  .about-image {
-    width: min(42vw, 150px);
-    max-width: 150px;
-    min-width: 120px;
-    margin: 1.1rem auto 1.4rem;
-    border-radius: 12px;
-  }
 }
 
 @media (max-width: 420px) {
