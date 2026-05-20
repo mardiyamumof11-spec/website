@@ -1061,7 +1061,7 @@ h2 {
   text-align: center;
 }
 
-.footer-image {
+.about-image {
   display: block;
   width: min(108px, 30vw);
   margin: 1rem auto 0;
@@ -1122,7 +1122,7 @@ h2 {
     letter-spacing: 0.05em;
   }
 
-  .footer-image {
+  .about-image {
     width: min(96px, 42vw);
     margin-top: 0.85rem;
     border-radius: 12px;
