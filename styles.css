@@ -1061,15 +1061,15 @@ h2 {
   text-align: center;
 }
 
-.footer-image {
+.about-image {
   display: block;
-  width: clamp(82px, 10vw, 104px);
+  width: clamp(90px, 11vw, 116px);
   max-width: 100%;
-  margin: 0.95rem auto 0;
-  border-radius: 12px;
+  margin: 1.15rem auto 1.15rem;
+  border-radius: 10px;
   border: 1px solid #f0dfe6;
   box-shadow: 0 6px 11px rgba(176, 132, 153, 0.12);
-  opacity: 0.92;
+  opacity: 0.94;
   object-fit: cover;
 }
 
@@ -1101,9 +1101,9 @@ h2 {
     width: min(1100px, 94%);
   }
 
-  .footer-image {
-    width: clamp(70px, 24vw, 90px);
-    margin-top: 0.9rem;
+  .about-image {
+    width: clamp(90px, 28vw, 120px);
+    margin-top: 1rem;
   }
 
   .hero {
