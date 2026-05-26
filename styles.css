@@ -472,6 +472,58 @@ h2 {
   color: #6f5957;
 }
 
+.examples-offer {
+  margin: 0 auto 1.6rem;
+  width: min(100%, 860px);
+  display: grid;
+  gap: 1rem;
+  background: linear-gradient(155deg, #fffdf9 0%, #fdf2ee 58%, #f9ece7 100%);
+  border: 1px solid #e8d2c8;
+  border-radius: 24px;
+  box-shadow: 0 14px 28px rgba(101, 70, 65, 0.12);
+  padding: 0.95rem;
+  text-align: left;
+}
+
+.examples-offer-image-wrap img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+  border: 1px solid #ecd6cf;
+  box-shadow: 0 10px 20px rgba(101, 70, 65, 0.14);
+}
+
+.examples-offer-content {
+  align-self: center;
+  padding: 0.35rem 0.2rem 0.1rem;
+}
+
+.examples-offer-topline {
+  margin: 0 0 0.45rem;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  color: #8a6662;
+}
+
+.examples-offer h3 {
+  margin: 0 0 0.55rem;
+  font-family: "Playfair Display", Georgia, serif;
+  color: #4f3735;
+  font-size: clamp(1.2rem, 3.2vw, 1.65rem);
+}
+
+.examples-offer p {
+  margin: 0 0 0.5rem;
+  color: #6a5350;
+}
+
+.examples-offer-price {
+  margin-bottom: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  color: #a7795f;
+  font-size: clamp(1.05rem, 2.4vw, 1.18rem);
+}
+
 .examples-grid {
   display: grid;
   grid-template-columns: minmax(0, 420px);
@@ -1206,6 +1258,12 @@ h2 {
 }
 
 @media (min-width: 768px) {
+  .examples-offer {
+    grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+    align-items: center;
+    padding: 1.1rem;
+  }
+
   .pricing-options {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.2rem;
