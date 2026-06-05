@@ -1133,6 +1133,119 @@ h2 {
   object-fit: cover;
 }
 
+.giveaway-banner {
+  width: min(620px, 100%);
+  margin: 0.1rem auto 0.45rem;
+  padding: 0.9rem 1.15rem;
+  border: 1px solid rgba(207, 176, 122, 0.42);
+  border-radius: 20px;
+  background: linear-gradient(155deg, rgba(255, 253, 251, 0.96) 0%, rgba(253, 243, 238, 0.94) 100%);
+  box-shadow: 0 12px 24px rgba(115, 63, 103, 0.1);
+  color: #5f4a48;
+}
+
+.giveaway-banner p {
+  margin: 0.1rem 0;
+  line-height: 1.45;
+  font-size: clamp(0.95rem, 2.8vw, 1.04rem);
+}
+
+.giveaway-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.1rem, 3.4vw, 1.32rem);
+  color: #8b4f7d;
+  font-weight: 600;
+}
+
+.featured-review {
+  text-align: center;
+  background: linear-gradient(160deg, #fffaf6 0%, #f7ebe7 100%);
+  border-top: 1px solid #ecdcd6;
+  border-bottom: 1px solid #ecdcd6;
+}
+
+.featured-review-inner {
+  max-width: 820px;
+}
+
+.featured-review-topline,
+.occasions-topline {
+  margin: 0 0 0.35rem;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  color: #8a6662;
+  letter-spacing: 0.06em;
+  font-size: 0.94rem;
+}
+
+.featured-review h2,
+.occasions h2 {
+  color: #4f3735;
+}
+
+.featured-review blockquote {
+  margin: 1.3rem auto 0;
+  padding: clamp(1.25rem, 4vw, 2rem);
+  border: 1px solid #ead7cf;
+  border-radius: 28px;
+  background: linear-gradient(165deg, #fffdfb 0%, #fdf3ee 100%);
+  box-shadow: 0 16px 34px rgba(96, 60, 82, 0.1);
+}
+
+.featured-review blockquote p {
+  margin: 0;
+  color: #554341;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-size: clamp(1.13rem, 3.2vw, 1.48rem);
+  line-height: 1.75;
+}
+
+.featured-review cite {
+  display: block;
+  margin-top: 1rem;
+  color: #8b5f73;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.08rem;
+  font-style: normal;
+}
+
+.occasions {
+  text-align: center;
+  background: linear-gradient(160deg, #fdf3ee 0%, #f9eae7 100%);
+}
+
+.occasions-inner {
+  max-width: 940px;
+}
+
+.occasions-grid {
+  list-style: none;
+  margin: 1.4rem auto 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.occasions-grid li {
+  padding: 0.9rem 0.75rem;
+  border: 1px solid #ecd9d2;
+  border-radius: 18px;
+  background: linear-gradient(155deg, #fffdfb 0%, #fdf5f0 100%);
+  box-shadow: 0 8px 18px rgba(96, 60, 82, 0.08);
+  color: #5f4d4a;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1rem, 2.8vw, 1.18rem);
+}
+
+@media (min-width: 768px) {
+  .occasions-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+  }
+}
+
 
 @media (prefers-reduced-motion: reduce) {
   .about {
