@@ -605,12 +605,33 @@ h2 {
   border-bottom: 1px solid #ecdcd6;
 }
 
+.testimonials-inner {
+  max-width: 1080px;
+}
+
+.trustpilot-rating {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0.75rem;
+  padding: 0.42rem 0.95rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid #ead7cf;
+  color: #8b5f73;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 0.98rem;
+  letter-spacing: 0.04em;
+  box-shadow: 0 10px 22px rgba(96, 60, 82, 0.08);
+}
+
 .testimonials h2 {
   margin-bottom: 0.3rem;
   color: #4f3735;
 }
 
 .testimonials-subtitle {
+  max-width: 680px;
   margin: 0 auto 1.7rem;
   color: #725c59;
 }
@@ -622,11 +643,28 @@ h2 {
 }
 
 .testimonial-card {
+  text-align: left;
   background: linear-gradient(165deg, #fffdfb 0%, #fdf3ee 100%);
   border: 1px solid #ecd9d2;
   border-radius: 20px;
   padding: 1.2rem 1.1rem;
   box-shadow: 0 10px 20px rgba(96, 60, 82, 0.08);
+}
+
+.testimonial-card-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.8rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.65rem;
+}
+
+.testimonial-card h3 {
+  margin: 0 0 0.7rem;
+  color: #4f3735;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.22rem;
 }
 
 .testimonial-card p {
@@ -635,10 +673,38 @@ h2 {
 }
 
 .testimonial-name {
-  margin-top: 0.9rem;
   font-family: "Playfair Display", Georgia, serif;
   color: #8b5f73;
   font-size: 1.03rem;
+}
+
+.testimonial-stars {
+  color: #00b67a;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+}
+
+.trustpilot-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.7rem;
+  padding: 0.85rem 1.45rem;
+  border-radius: 999px;
+  background: #8b5f73;
+  color: #fffdfb;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 14px 28px rgba(96, 60, 82, 0.16);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.trustpilot-button:hover,
+.trustpilot-button:focus-visible {
+  background: #744d60;
+  transform: translateY(-2px);
+  box-shadow: 0 18px 34px rgba(96, 60, 82, 0.2);
 }
 
 .price-card {
@@ -1157,18 +1223,6 @@ h2 {
   font-weight: 600;
 }
 
-.featured-review {
-  text-align: center;
-  background: linear-gradient(160deg, #fffaf6 0%, #f7ebe7 100%);
-  border-top: 1px solid #ecdcd6;
-  border-bottom: 1px solid #ecdcd6;
-}
-
-.featured-review-inner {
-  max-width: 820px;
-}
-
-.featured-review-topline,
 .occasions-topline {
   margin: 0 0 0.35rem;
   font-family: "Playfair Display", Georgia, serif;
@@ -1178,38 +1232,9 @@ h2 {
   font-size: 0.94rem;
 }
 
-.featured-review h2,
 .occasions h2 {
   color: #4f3735;
 }
-
-.featured-review blockquote {
-  margin: 1.3rem auto 0;
-  padding: clamp(1.25rem, 4vw, 2rem);
-  border: 1px solid #ead7cf;
-  border-radius: 28px;
-  background: linear-gradient(165deg, #fffdfb 0%, #fdf3ee 100%);
-  box-shadow: 0 16px 34px rgba(96, 60, 82, 0.1);
-}
-
-.featured-review blockquote p {
-  margin: 0;
-  color: #554341;
-  font-family: "Playfair Display", Georgia, serif;
-  font-style: italic;
-  font-size: clamp(1.13rem, 3.2vw, 1.48rem);
-  line-height: 1.75;
-}
-
-.featured-review cite {
-  display: block;
-  margin-top: 1rem;
-  color: #8b5f73;
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: 1.08rem;
-  font-style: normal;
-}
-
 .occasions {
   text-align: center;
   background: linear-gradient(160deg, #fdf3ee 0%, #f9eae7 100%);
