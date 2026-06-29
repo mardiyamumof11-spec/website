@@ -472,65 +472,6 @@ h2 {
   color: #6f5957;
 }
 
-.june-offer-section {
-  padding: 40px 20px;
-}
-
-.june-offer-card {
-  background: #f8f1ee;
-  border: 1px solid #ead7cf;
-  border-radius: 30px;
-  padding: 35px 25px;
-  text-align: left;
-  max-width: 700px;
-  margin: 0 auto 1.6rem;
-}
-
-.offer-small-title {
-  font-size: 18px;
-  font-style: italic;
-  color: #8a6a63;
-  margin: 0 0 10px;
-}
-
-.june-offer-card h3 {
-  font-size: clamp(1.7rem, 5vw, 2.625rem);
-  line-height: 1.1;
-  color: #4a2d2d;
-  margin-bottom: 25px;
-  font-family: "Playfair Display", Georgia, serif;
-}
-
-.offer-text {
-  font-size: clamp(1.05rem, 3.7vw, 1.375rem);
-  line-height: 1.7;
-  color: #5f4b4b;
-  margin-bottom: 18px;
-}
-
-.price-box {
-  margin-top: 30px;
-  background: #fff;
-  border-radius: 20px;
-  padding: 20px;
-  display: inline-block;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-}
-
-.old-price {
-  display: block;
-  text-decoration: line-through;
-  color: #9b7d7d;
-  font-size: clamp(1rem, 3.4vw, 1.375rem);
-  margin-bottom: 8px;
-}
-
-.new-price {
-  display: block;
-  color: #b68b3c;
-  font-size: clamp(1.65rem, 6vw, 2.375rem);
-  font-weight: 700;
-}
 
 .examples-grid {
   display: grid;
