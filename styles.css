@@ -30,7 +30,7 @@ body {
 }
 
 .container {
-  width: min(1180px, 92%);
+  width: min(1200px, 92%);
   margin: 0 auto;
 }
 
@@ -69,12 +69,12 @@ h3 {
 }
 
 h1 {
-  max-width: 920px;
+  max-width: 1080px;
   margin-bottom: 0.45rem;
   font-family: "Playfair Display", Georgia, serif;
   font-style: italic;
   font-weight: 500;
-  font-size: clamp(1.8rem, 4.6vw, 3.85rem);
+  font-size: clamp(1.8rem, 4.6vw, 4.25rem);
   letter-spacing: 0.04em;
   line-height: 1.22;
   color: #5a3f3f;
@@ -82,13 +82,13 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1.6rem, 2.5vw, 2.75rem);
+  font-size: clamp(1.6rem, 2.5vw, 3rem);
 }
 
 .tagline {
-  max-width: 860px;
+  max-width: 980px;
   margin: 0 auto 0.4rem;
-  font-size: clamp(1.2rem, 3vw, 2.05rem);
+  font-size: clamp(1.2rem, 3vw, 2.25rem);
   font-family: "Great Vibes", "Playfair Display", serif;
   font-weight: 400;
   letter-spacing: 0.03em;
@@ -98,10 +98,10 @@ h2 {
 
 .hero-intro-line {
   margin: 0.15rem auto 0.25rem;
-  max-width: 880px;
+  max-width: 980px;
   color: #70595a;
   font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(0.98rem, 2.8vw, 1.2rem);
+  font-size: clamp(0.98rem, 2.8vw, 1.3rem);
   line-height: 1.65;
 }
 
@@ -247,13 +247,13 @@ h2 {
 }
 
 .about .container {
-  width: min(880px, 92%);
+  width: min(1040px, 92%);
 }
 
 .about-title {
   margin: 0.2rem 0 1.4rem;
   font-family: "Great Vibes", "Cormorant Garamond", "Playfair Display", Georgia, serif;
-  font-size: clamp(2.2rem, 5.5vw, 3.15rem);
+  font-size: clamp(2.2rem, 5.5vw, 3.45rem);
   letter-spacing: 0.03em;
   font-weight: 600;
   color: #b68834;
@@ -264,12 +264,12 @@ h2 {
   margin: 0 0 1rem;
   color: #2f201c;
   font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(0.97rem, 2.8vw, 1.16rem);
+  font-size: clamp(0.97rem, 2.8vw, 1.26rem);
   line-height: 2.08;
 }
 
 .about-intro {
-  font-size: clamp(1rem, 2.95vw, 1.2rem);
+  font-size: clamp(1rem, 2.95vw, 1.32rem);
 }
 
 .about-signature {
@@ -470,6 +470,7 @@ h2 {
   margin: 0 auto 1.8rem;
   max-width: 62ch;
   color: #6f5957;
+  font-size: 1.08rem;
 }
 
 
@@ -1376,7 +1377,7 @@ h2 {
 @media (min-width: 1024px) {
   .pricing-options {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1.5rem;
+    gap: 1.35rem;
   }
 
   .testimonials-grid {
@@ -1386,7 +1387,7 @@ h2 {
 
   .examples-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1.5rem;
+    gap: 1.35rem;
     justify-content: center;
   }
 
@@ -1474,7 +1475,7 @@ h2 {
 }
 
 .examples-more {
-  max-width: 760px;
+  max-width: 920px;
   margin: 2rem auto 0;
   font-family: "Playfair Display", Georgia, serif;
   font-style: italic;
@@ -1490,7 +1491,7 @@ h2 {
 }
 
 .creative-workspace-inner {
-  max-width: 760px;
+  max-width: 960px;
 }
 
 .creative-workspace h2 {
@@ -1515,7 +1516,7 @@ h2 {
 
 .creative-workspace-image {
   display: block;
-  width: min(360px, 86vw);
+  width: min(460px, 86vw);
   max-width: 100%;
   margin: 0 auto;
   border-radius: 18px;
@@ -1532,19 +1533,43 @@ h2 {
 
 @media (min-width: 1024px) {
   body {
-    font-size: 1.04rem;
+    font-size: 1.08rem;
   }
 
   .section {
-    padding: 4.5rem 0;
+    padding: 5rem 0;
   }
 
   .hero {
-    padding: 5rem 0 4rem;
+    padding: 5.5rem 0 4.5rem;
   }
 
   .example-card {
-    padding: 1rem;
+    padding: 1.1rem;
+  }
+
+  .example-title {
+    font-size: 2.25rem;
+  }
+
+  .graduation-title {
+    font-size: 2rem;
+  }
+
+  .price-card {
+    min-height: 100%;
+  }
+
+  .price-label {
+    font-size: 1.12rem;
+  }
+
+  .giveaway-banner {
+    width: min(920px, 100%);
+  }
+
+  .giveaway-banner p {
+    font-size: 1.12rem;
   }
 
   .btn {
