@@ -1141,6 +1141,29 @@ h2 {
   font-size: clamp(1rem, 2.8vw, 1.18rem);
 }
 
+
+@media (min-width: 768px) {
+  .giveaway-banner {
+    width: min(830px, 100%);
+    margin: 0.35rem auto 0.7rem;
+    padding: 1.6rem 2rem 1.75rem;
+  }
+
+  .giveaway-banner .about-image {
+    width: clamp(340px, 38vw, 470px);
+    margin: 1.35rem auto 1.45rem;
+    object-fit: contain;
+  }
+
+  .giveaway-banner p {
+    font-size: clamp(1.08rem, 1.55vw, 1.22rem);
+  }
+
+  .giveaway-title {
+    font-size: clamp(1.38rem, 2vw, 1.7rem);
+  }
+}
+
 @media (min-width: 768px) {
   .occasions-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1565,11 +1588,11 @@ h2 {
   }
 
   .giveaway-banner {
-    width: min(920px, 100%);
+    width: min(850px, 100%);
   }
 
   .giveaway-banner p {
-    font-size: 1.12rem;
+    font-size: 1.2rem;
   }
 
   .btn {
