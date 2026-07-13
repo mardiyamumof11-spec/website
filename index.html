@@ -380,6 +380,15 @@
       </div>
     </footer>
 
+    <div class="example-lightbox" aria-hidden="true">
+      <button class="example-lightbox-close" type="button" aria-label="Close image preview">×</button>
+      <button class="example-lightbox-nav example-lightbox-prev" type="button" aria-label="View previous example">‹</button>
+      <div class="example-lightbox-frame" role="dialog" aria-modal="true" aria-label="Example poem image preview">
+        <img class="example-lightbox-image" src="" alt="" />
+      </div>
+      <button class="example-lightbox-nav example-lightbox-next" type="button" aria-label="View next example">›</button>
+    </div>
+
     <script>
       const aboutSection = document.querySelector(".about");
       if (aboutSection) {
@@ -400,6 +409,90 @@
         } else {
           revealAbout();
         }
+      }
+
+      const exampleImages = Array.from(document.querySelectorAll(".examples-grid .example-card img"));
+      const lightbox = document.querySelector(".example-lightbox");
+      const lightboxImage = document.querySelector(".example-lightbox-image");
+      const lightboxClose = document.querySelector(".example-lightbox-close");
+      const lightboxPrev = document.querySelector(".example-lightbox-prev");
+      const lightboxNext = document.querySelector(".example-lightbox-next");
+      const desktopLightboxQuery = window.matchMedia("(min-width: 1024px) and (hover: hover) and (pointer: fine)");
+      let currentExampleIndex = 0;
+      let lastFocusedElement = null;
+
+      const showExampleImage = (index) => {
+        currentExampleIndex = (index + exampleImages.length) % exampleImages.length;
+        const selectedImage = exampleImages[currentExampleIndex];
+        lightboxImage.src = selectedImage.currentSrc || selectedImage.src;
+        lightboxImage.alt = selectedImage.alt;
+      };
+
+      const closeExampleLightbox = () => {
+        if (!lightbox || lightbox.getAttribute("aria-hidden") === "true") return;
+        lightbox.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("lightbox-open");
+        lightboxImage.src = "";
+        if (lastFocusedElement) {
+          lastFocusedElement.focus();
+        }
+      };
+
+      const openExampleLightbox = (index) => {
+        if (!desktopLightboxQuery.matches || !lightbox || !lightboxImage) return;
+        lastFocusedElement = document.activeElement;
+        showExampleImage(index);
+        lightbox.setAttribute("aria-hidden", "false");
+        document.body.classList.add("lightbox-open");
+        lightboxClose.focus();
+      };
+
+      const updateExampleImageInteractivity = () => {
+        exampleImages.forEach((image, index) => {
+          if (desktopLightboxQuery.matches) {
+            image.setAttribute("role", "button");
+            image.setAttribute("tabindex", "0");
+            image.setAttribute("aria-label", `Open ${image.alt} in large preview`);
+          } else {
+            image.removeAttribute("role");
+            image.removeAttribute("tabindex");
+            image.removeAttribute("aria-label");
+            closeExampleLightbox();
+          }
+
+          image.onclick = () => openExampleLightbox(index);
+          image.onkeydown = (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+              event.preventDefault();
+              openExampleLightbox(index);
+            }
+          };
+        });
+      };
+
+      if (exampleImages.length && lightbox && lightboxImage) {
+        updateExampleImageInteractivity();
+        desktopLightboxQuery.addEventListener("change", updateExampleImageInteractivity);
+
+        lightboxClose.addEventListener("click", closeExampleLightbox);
+        lightboxPrev.addEventListener("click", () => showExampleImage(currentExampleIndex - 1));
+        lightboxNext.addEventListener("click", () => showExampleImage(currentExampleIndex + 1));
+        lightbox.addEventListener("click", (event) => {
+          if (event.target === lightbox) {
+            closeExampleLightbox();
+          }
+        });
+
+        document.addEventListener("keydown", (event) => {
+          if (lightbox.getAttribute("aria-hidden") === "true") return;
+          if (event.key === "Escape") {
+            closeExampleLightbox();
+          } else if (event.key === "ArrowLeft") {
+            showExampleImage(currentExampleIndex - 1);
+          } else if (event.key === "ArrowRight") {
+            showExampleImage(currentExampleIndex + 1);
+          }
+        });
       }
     </script>
   </body>
