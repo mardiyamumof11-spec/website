@@ -1,0 +1,42 @@
+.goal-page { background: #f8f0eb; }
+.goal-shell { width: min(820px, calc(100% - 2rem)); margin: 0 auto; }
+.goal-hero { padding: 4.5rem 0 3rem; text-align: center; background: radial-gradient(circle at 50% 0, #fffaf5 0, transparent 65%); }
+.goal-eyebrow, .progress-kicker { margin: 0 0 .8rem; color: #9a716c; font-size: .75rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+.goal-hero h1 { margin: 0 auto; max-width: 760px; font-style: normal; font-size: clamp(2.45rem, 9vw, 4.8rem); letter-spacing: -.02em; }
+.goal-hero h1 span { display: block; color: var(--primary); }
+.goal-hero-note { margin: 1rem 0 0; color: #806361; font-family: "Playfair Display", serif; font-style: italic; font-size: 1.12rem; }
+.goal-story { padding: 0 0 3rem; }
+.story-card, .progress-card, .payment-card { border: 1px solid #ead8d1; border-radius: 24px; background: rgba(255,252,249,.94); box-shadow: 0 18px 50px rgba(91,57,66,.08); }
+.story-card { padding: clamp(1.5rem, 5vw, 3.3rem); }
+.story-card h2 { color: #744c62; font-family: "Great Vibes", cursive; font-size: clamp(2.2rem, 8vw, 3.2rem); font-weight: 400; }
+.story-card p { color: #584443; font-family: "Playfair Display", Georgia, serif; font-size: clamp(1rem, 3vw, 1.14rem); line-height: 1.85; }
+.story-card strong { color: #6f3e62; }
+.story-card .work-statement { margin: 1.6rem 0; color: #824f70; font-family: "Great Vibes", cursive; font-size: clamp(2rem, 8vw, 3rem); text-align: center; }
+.progress-section { padding: 3.5rem 0; background: linear-gradient(145deg,#efe0dc,#f7ede8); }
+.progress-card { padding: clamp(1.5rem, 5vw, 3.4rem); text-align: center; }
+.progress-card h2 { color: #70435f; font-family: "Playfair Display", serif; font-size: clamp(2rem, 8vw, 3.5rem); }
+.progress-card h2 small { display: block; margin-top: .25rem; color: #7c6561; font-size: .45em; font-weight: 500; }
+.progress-track { height: 18px; overflow: hidden; border: 4px solid #fff; border-radius: 999px; background: #e5d5d0; box-shadow: inset 0 2px 5px rgba(70,40,50,.12), 0 4px 14px rgba(70,40,50,.08); }
+.progress-fill { display: block; width: 0; height: 100%; border-radius: inherit; background: linear-gradient(90deg,#b57b99,#80506f); transition: width .6s ease; }
+.progress-thanks { color: #806a67; font-family: "Playfair Display", serif; font-style: italic; }
+.goal-facts { display: grid; gap: .75rem; margin: 2rem 0 0; }
+.goal-facts div { padding: 1rem; border: 1px solid #ead8d1; border-radius: 14px; background: #fffaf7; }
+.goal-facts dt { color: #94706e; font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.goal-facts dd { margin: .25rem 0 0; color: #593c4d; font-family: "Playfair Display", serif; font-size: 1.15rem; font-weight: 600; }
+.payment-section { padding: 3.5rem 0; }
+.payment-card { padding: clamp(1.5rem, 5vw, 3.4rem); text-align: center; }
+.payment-flourish { margin: 0; color: #bf9560; font-size: 2rem; }
+.payment-card h2 { color: #573b48; font-family: "Playfair Display", serif; font-size: clamp(1.75rem, 6vw, 2.7rem); }
+.payment-card > p { color: #6b5552; }
+.bank-button { display: block; margin: 1.8rem auto .8rem; padding: 1.1rem 1rem; border-radius: 14px; color: #fff; background: linear-gradient(135deg,#8b4f7d,#683a5e); box-shadow: 0 12px 28px rgba(115,63,103,.24); font-size: clamp(.92rem, 3.6vw, 1.08rem); font-weight: 700; letter-spacing: .035em; text-decoration: none; text-transform: uppercase; }
+.bank-button:hover, .bank-button:focus-visible { background: #623556; transform: translateY(-2px); }
+.minimum-payment { margin-top: 0; font-weight: 700; }
+.after-payment { margin-top: 2rem; padding: 1.25rem; border-radius: 16px; background: #f7ebe8; }
+.after-payment h3 { color: #754b62; font-family: "Playfair Display", serif; }
+.after-payment a { color: #713e63; font-weight: 700; text-underline-offset: .2em; }
+.goal-blessing { padding: 3.5rem 0 4rem; text-align: center; background: linear-gradient(180deg,#f7eee9,#f1dfdd); }
+.goal-blessing p { margin: 0 auto .8rem; max-width: 700px; color: #77505d; font-family: "Great Vibes", "Playfair Display", serif; font-size: clamp(1.65rem, 6vw, 2.6rem); line-height: 1.5; }
+.goal-blessing .ameen { color: #674052; font-size: clamp(2rem, 7vw, 3rem); }
+@media (min-width: 768px) { .goal-facts { grid-template-columns: repeat(3,1fr); } .goal-hero { padding: 6rem 0 4rem; } .bank-button { width: fit-content; padding-inline: 2.2rem; } }
+@media (min-width: 1024px) { .goal-story, .payment-section { padding-block: 5rem; } .progress-section { padding-block: 5rem; } }
+@media (prefers-reduced-motion: reduce) { .progress-fill, .bank-button { transition: none; } }

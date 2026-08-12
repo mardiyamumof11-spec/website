@@ -34,6 +34,70 @@ body {
   margin: 0 auto;
 }
 
+.site-nav {
+  position: relative;
+  z-index: 10;
+  border-bottom: 1px solid rgba(207, 176, 122, 0.34);
+  background: rgba(255, 250, 246, 0.88);
+  backdrop-filter: blur(12px);
+}
+
+.site-nav-inner {
+  min-height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.site-brand,
+.goal-nav-link {
+  color: #624650;
+  text-decoration: none;
+}
+
+.site-brand {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1rem, 3.7vw, 1.28rem);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.site-brand span {
+  color: #8b6b68;
+  font-weight: 500;
+}
+
+.goal-nav-link {
+  padding: 0.55rem 0.8rem;
+  border: 1px solid #dfc8d4;
+  border-radius: 999px;
+  background: #fff9f6;
+  font-size: clamp(0.78rem, 3vw, 0.95rem);
+  font-weight: 700;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(115, 63, 103, 0.07);
+}
+
+.site-brand:hover,
+.site-brand:focus-visible,
+.goal-nav-link:hover,
+.goal-nav-link:focus-visible {
+  color: var(--primary-strong);
+}
+
+.goal-nav-link:hover,
+.goal-nav-link:focus-visible {
+  border-color: #b98aa5;
+  background: #ffffff;
+}
+
+@media (max-width: 480px) {
+  .site-brand span {
+    display: none;
+  }
+}
+
 .hero {
   padding: 4rem 0 3rem;
   text-align: center;
