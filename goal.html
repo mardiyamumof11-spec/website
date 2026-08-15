@@ -47,9 +47,9 @@
         <div class="goal-shell progress-card">
           <p class="progress-kicker">My journey</p>
           <h2 id="progress-heading">My £5,000 Goal</h2>
-          <p class="progress-amount" id="progress-amount"><span id="raised-display">£0</span> raised of £5,000</p>
-          <div class="progress-track" role="progressbar" aria-label="£0 raised of £5,000" aria-valuemin="0" aria-valuemax="5000" aria-valuenow="0">
-            <span class="progress-fill"></span>
+          <p class="progress-amount" id="progress-amount"><span id="raised-display">£55</span> raised of £5,000 (<span id="percentage-display">1.1%</span>) · <span id="remaining-display">£4,945</span> remaining</p>
+          <div class="progress-track" role="progressbar" aria-label="£55 raised of £5,000 (1.1%); £4,945 remaining" aria-valuemin="0" aria-valuemax="5000" aria-valuenow="55">
+            <span class="progress-fill" style="width: 1.1%"></span>
           </div>
           <div class="progress-scale" aria-hidden="true"><span>£0</span><span>£5,000</span></div>
           <p class="progress-encouragement">Every poem brings me one step closer, in sha Allah🤲🏻</p>
@@ -85,19 +85,25 @@
 
     <script>
       // Update only this number whenever a new payment is received.
-      const amountRaised = 0;
+      const amountRaised = 55;
       const goalAmount = 5000;
 
       const safeAmount = Math.min(Math.max(amountRaised, 0), goalAmount);
       const progress = document.querySelector(".progress-track");
       const formattedAmount = `£${safeAmount.toLocaleString("en-GB")}`;
+      const remainingAmount = goalAmount - safeAmount;
+      const formattedRemaining = `£${remainingAmount.toLocaleString("en-GB")}`;
+      const percentage = (safeAmount / goalAmount) * 100;
+      const formattedPercentage = `${percentage.toLocaleString("en-GB", { maximumFractionDigits: 2 })}%`;
       document.querySelector("#raised-display").textContent = formattedAmount;
+      document.querySelector("#percentage-display").textContent = formattedPercentage;
+      document.querySelector("#remaining-display").textContent = formattedRemaining;
       if (safeAmount === goalAmount) {
         document.querySelector("#progress-amount").textContent = `${formattedAmount} / £5,000 🤍`;
       }
-      document.querySelector(".progress-fill").style.width = `${(safeAmount / goalAmount) * 100}%`;
+      document.querySelector(".progress-fill").style.width = `${percentage}%`;
       progress.setAttribute("aria-valuenow", safeAmount);
-      progress.setAttribute("aria-label", `${formattedAmount} raised of £5,000`);
+      progress.setAttribute("aria-label", `${formattedAmount} raised of £5,000 (${formattedPercentage}); ${formattedRemaining} remaining`);
     </script>
   </body>
 </html>
