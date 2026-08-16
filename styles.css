@@ -1158,10 +1158,63 @@ h2 {
 }
 
 .giveaway-title {
+  margin: 0;
   font-family: "Playfair Display", Georgia, serif;
   font-size: clamp(1.1rem, 3.4vw, 1.32rem);
   color: #8b4f7d;
   font-weight: 600;
+}
+
+.giveaway-banner .giveaway-intro {
+  margin: 0.65rem auto 1rem;
+  max-width: 660px;
+}
+
+.keepsake-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.keepsake-item {
+  padding: 0.7rem 0.7rem 0.85rem;
+  border: 1px solid rgba(207, 176, 122, 0.3);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.62);
+  box-shadow: 0 7px 15px rgba(115, 63, 103, 0.07);
+}
+
+.keepsake-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 10px;
+  object-fit: contain;
+  background: #fffaf8;
+}
+
+.keepsake-item h3 {
+  margin: 0.7rem 0 0.15rem;
+  color: #6c4e63;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1rem, 3vw, 1.12rem);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.giveaway-banner .keepsake-price {
+  color: #a05d83;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.18rem;
+  font-weight: 700;
+}
+
+.giveaway-banner .giveaway-closing {
+  margin-top: 0.65rem;
+  color: #765766;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
 }
 
 .occasions-topline {
@@ -1208,15 +1261,15 @@ h2 {
 
 @media (min-width: 768px) {
   .giveaway-banner {
-    width: min(830px, 100%);
+    width: min(1000px, 100%);
     margin: 0.35rem auto 0.7rem;
     padding: 1.6rem 2rem 1.75rem;
   }
 
-  .giveaway-banner .about-image {
-    width: clamp(340px, 38vw, 470px);
-    margin: 1.35rem auto 1.45rem;
-    object-fit: contain;
+  .keepsake-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.1rem;
+    margin: 1.35rem 0 1.25rem;
   }
 
   .giveaway-banner p {
@@ -1652,7 +1705,7 @@ h2 {
   }
 
   .giveaway-banner {
-    width: min(850px, 100%);
+    width: min(1000px, 100%);
   }
 
   .giveaway-banner p {
