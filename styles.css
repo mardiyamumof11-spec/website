@@ -1130,7 +1130,7 @@ h2 {
 
 .about-image {
   display: block;
-  width: clamp(90px, 11vw, 116px);
+  width: clamp(110px, 13vw, 140px);
   max-width: 100%;
   margin: 1.15rem auto 1.15rem;
   border-radius: 10px;
@@ -1317,7 +1317,7 @@ h2 {
   }
 
   .about-image {
-    width: clamp(90px, 28vw, 120px);
+    width: clamp(110px, 32vw, 140px);
     margin-top: 1rem;
   }
 
