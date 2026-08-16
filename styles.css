@@ -1149,6 +1149,13 @@ h2 {
   background: linear-gradient(155deg, rgba(255, 253, 251, 0.96) 0%, rgba(253, 243, 238, 0.94) 100%);
   box-shadow: 0 12px 24px rgba(115, 63, 103, 0.1);
   color: #5f4a48;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .keepsake-image {
+    max-height: 320px;
+  }
 }
 
 .giveaway-banner p {
