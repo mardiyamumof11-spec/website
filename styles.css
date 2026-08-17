@@ -1265,6 +1265,14 @@ h2 {
   font-size: clamp(1rem, 2.8vw, 1.18rem);
 }
 
+.occasions-more {
+  margin: 1.4rem 0 0;
+  color: #8a6662;
+  font-family: "Great Vibes", "Playfair Display", Georgia, serif;
+  font-size: clamp(1.65rem, 5vw, 2.1rem);
+  line-height: 1.25;
+}
+
 
 @media (min-width: 768px) {
   .giveaway-banner {
@@ -1290,7 +1298,7 @@ h2 {
 
 @media (min-width: 768px) {
   .occasions-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
   }
 }
