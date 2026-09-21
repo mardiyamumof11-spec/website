@@ -51,6 +51,7 @@ body {
 }
 
 .site-brand,
+.beauty-nav-link,
 .goal-nav-link {
   color: #624650;
   text-decoration: none;
@@ -68,6 +69,19 @@ body {
   font-weight: 500;
 }
 
+.beauty-nav-link {
+  margin-left: auto;
+  padding: 0.5rem 0.15rem;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(0.9rem, 2.8vw, 1.05rem);
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: underline;
+  text-decoration-color: rgba(139, 79, 125, 0.35);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.28em;
+}
+
 .goal-nav-link {
   padding: 0.55rem 0.8rem;
   border: 1px solid #dfc8d4;
@@ -81,9 +95,16 @@ body {
 
 .site-brand:hover,
 .site-brand:focus-visible,
+.beauty-nav-link:hover,
+.beauty-nav-link:focus-visible,
 .goal-nav-link:hover,
 .goal-nav-link:focus-visible {
   color: var(--primary-strong);
+}
+
+.beauty-nav-link:hover,
+.beauty-nav-link:focus-visible {
+  text-decoration-color: var(--primary-strong);
 }
 
 .goal-nav-link:hover,
@@ -93,9 +114,38 @@ body {
 }
 
 @media (max-width: 480px) {
+  .site-nav-inner {
+    gap: 0.4rem;
+  }
+
   .site-brand span {
     display: none;
   }
+
+  .goal-nav-link {
+    padding-inline: 0.6rem;
+  }
+}
+
+.beauty-main {
+  min-height: calc(100vh - 68px);
+  display: grid;
+  place-items: center;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.beauty-main h1 {
+  margin-bottom: 0.65rem;
+  color: #5a3f3f;
+}
+
+.beauty-coming-soon {
+  margin: 0;
+  color: #806361;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.1rem, 3vw, 1.35rem);
+  font-style: italic;
 }
 
 .hero {
