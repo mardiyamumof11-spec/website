@@ -50,18 +50,13 @@ body {
   gap: 0.8rem;
 }
 
-.site-brand,
-.beauty-nav-link,
-.goal-nav-link {
-  color: #624650;
-  text-decoration: none;
-}
-
 .site-brand {
+  color: #624650;
   font-family: "Playfair Display", Georgia, serif;
   font-size: clamp(1rem, 3.7vw, 1.28rem);
   font-weight: 600;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 .site-brand span {
@@ -69,54 +64,9 @@ body {
   font-weight: 500;
 }
 
-.beauty-nav-link,
-.beauty-nav-link:visited,
-.beauty-nav-link:active {
-  justify-self: center;
-  padding: 0.65rem 0.35rem;
-  color: #684b52;
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: 22px;
-  font-style: italic;
-  font-weight: 500;
-  letter-spacing: 0.3px;
-  line-height: 1;
-  white-space: nowrap;
-  text-decoration: none;
-  transition: color 180ms ease;
-}
-
-.goal-nav-link {
-  justify-self: end;
-  padding: 0.55rem 0.8rem;
-  border: 1px solid #dfc8d4;
-  border-radius: 999px;
-  background: #fff9f6;
-  font-size: clamp(0.78rem, 3vw, 0.95rem);
-  font-weight: 700;
-  text-align: center;
-  box-shadow: 0 5px 15px rgba(115, 63, 103, 0.07);
-}
-
 .site-brand:hover,
-.site-brand:focus-visible,
-.beauty-nav-link:hover,
-.beauty-nav-link:focus-visible,
-.goal-nav-link:hover,
-.goal-nav-link:focus-visible {
+.site-brand:focus-visible {
   color: var(--primary-strong);
-}
-
-.beauty-nav-link:hover,
-.beauty-nav-link:focus-visible {
-  color: #a67c52;
-  text-decoration: none;
-}
-
-.goal-nav-link:hover,
-.goal-nav-link:focus-visible {
-  border-color: #b98aa5;
-  background: #ffffff;
 }
 
 @media (max-width: 480px) {
@@ -127,35 +77,6 @@ body {
   .site-brand span {
     display: none;
   }
-
-  .goal-nav-link {
-    padding-inline: 0.6rem;
-  }
-
-  .beauty-nav-link {
-    padding-inline: 0.5rem;
-  }
-}
-
-.beauty-main {
-  min-height: calc(100vh - 68px);
-  display: grid;
-  place-items: center;
-  padding: 4rem 1rem;
-  text-align: center;
-}
-
-.beauty-main h1 {
-  margin-bottom: 0.65rem;
-  color: #5a3f3f;
-}
-
-.beauty-coming-soon {
-  margin: 0;
-  color: #806361;
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(1.1rem, 3vw, 1.35rem);
-  font-style: italic;
 }
 
 .hero {
