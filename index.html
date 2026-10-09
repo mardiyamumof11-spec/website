@@ -15,6 +15,57 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      .trustpilot-summary {
+        padding: 0.9rem 1rem;
+        border-bottom: 1px solid var(--border);
+        background: var(--bg-soft);
+        text-align: center;
+      }
+      .trustpilot-summary-inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 0.45rem 0.85rem;
+        max-width: 760px;
+        margin: 0 auto;
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+      .trustpilot-summary-stars {
+        color: #00b67a;
+        font-size: 1.25rem;
+        letter-spacing: 0.08em;
+        line-height: 1;
+        white-space: nowrap;
+      }
+      .trustpilot-summary strong {
+        color: var(--text);
+        font-weight: 600;
+      }
+      .trustpilot-summary-link {
+        padding: 0.35rem 0.8rem;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        color: var(--primary-strong);
+        text-decoration: none;
+        font-size: 0.8rem;
+        transition: background-color 150ms ease;
+      }
+      .trustpilot-summary-link:hover,
+      .trustpilot-summary-link:focus-visible {
+        background-color: var(--bg);
+      }
+      @media (max-width: 480px) {
+        .trustpilot-summary-inner {
+          max-width: 280px;
+        }
+        .trustpilot-summary-rating {
+          flex-basis: 100%;
+        }
+      }
+    </style>
   </head>
   <body>
     <nav class="site-nav" aria-label="Main navigation">
@@ -22,6 +73,14 @@
         <a class="site-brand" href="./index.html">Mardiya <span>~ Poems &amp; Designs</span></a>
       </div>
     </nav>
+    <section class="trustpilot-summary" aria-label="Trustpilot customer reviews">
+      <div class="trustpilot-summary-inner">
+        <span class="trustpilot-summary-stars" role="img" aria-label="Five green stars">★★★★★</span>
+        <strong>Excellent</strong>
+        <span class="trustpilot-summary-rating">Rated 5.0 on Trustpilot</span>
+        <a class="trustpilot-summary-link" href="https://uk.trustpilot.com/review/mardiyamumof11.co.uk" target="_blank" rel="noopener noreferrer">Read our reviews</a>
+      </div>
+    </section>
     <header class="hero">
       <div class="container">
         <h1>Beautiful &amp; Heartfelt Personalised Poems</h1>
