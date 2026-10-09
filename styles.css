@@ -1971,3 +1971,89 @@ h2 {
 @media (prefers-reduced-motion: reduce) {
   .faq-toggle { transition: none; }
 }
+
+/* Compact homepage: examples first, with a brief introduction and ordering guide. */
+.home .hero { padding: 2.5rem 0 2rem; }
+.home .section, .home .about { padding: 1.75rem 0; }
+.home .about .container { max-width: 880px; }
+.home .about p { line-height: 1.7; margin-bottom: 0.7rem; }
+.home .about-title { margin-bottom: 0.8rem; }
+.home .about-image { width: 90px; margin: 0.7rem auto 0; }
+.home-how, .home-why { text-align: center; }
+.home-how h2, .home-why h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  color: #6f4d4a;
+  margin-bottom: 1rem;
+}
+.home-step-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+.home-step {
+  min-width: 0;
+  padding: 1rem 0.85rem;
+  border: 1px solid #ecd9d2;
+  border-radius: 20px;
+  background: linear-gradient(155deg, #fffdfb 0%, #fdf5f0 100%);
+  box-shadow: 0 8px 18px rgba(96, 60, 82, 0.08);
+}
+.home-step-number {
+  display: block;
+  color: #bc9a67;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  margin-bottom: 0.6rem;
+}
+.home-step h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.home-step p { margin: 0; color: #70595a; font-size: 1rem; line-height: 1.55; }
+.home-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem 1.5rem;
+}
+.home-benefits li {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: #584746;
+  font-size: 0.95rem;
+  text-align: left;
+}
+.home-examples p { max-width: 65ch; margin: 0.75rem auto 1.1rem; color: #70595a; }
+.home .home-examples { padding: 3.5rem 0; }
+.home .creative-workspace p { margin-bottom: 1rem; }
+.home .creative-workspace-image { width: min(300px, 86vw); }
+@media (min-width: 900px) {
+  .home-step-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .home-step { padding: 1.1rem; }
+}
+@media (min-width: 1024px) {
+  .home .home-examples { padding: 5rem 0; }
+}
+@media (max-width: 600px) {
+  .home .hero { padding: 1.75rem 0 1.5rem; }
+  .home .section, .home .about { padding: 1.25rem 0; }
+  .home .home-examples { padding: 2.75rem 0; }
+  .home-benefits { display: grid; justify-content: center; gap: 0.55rem; }
+  .home .creative-workspace-image { width: min(230px, 86vw); }
+}
+@media (max-width: 359px) {
+  .home-step-grid { grid-template-columns: 1fr; }
+}
