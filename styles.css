@@ -37,7 +37,7 @@ body {
 .site-nav {
   position: relative;
   z-index: 10;
-  border-bottom: 1px solid rgba(207, 176, 122, 0.34);
+
   background: rgba(255, 250, 246, 0.88);
   backdrop-filter: blur(12px);
 }
@@ -187,7 +187,7 @@ h2 {
 
 .why-choose {
   background: linear-gradient(160deg, #fffaf6 0%, #f8eee8 100%);
-  border-top: 1px solid #ecdcd6;
+
 }
 
 .why-choose-inner {
@@ -340,8 +340,8 @@ h2 {
 
 .section-alt {
   background: var(--bg-soft);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+
+
 }
 
 .how-it-works {
@@ -370,26 +370,7 @@ h2 {
   color: #4b3230;
 }
 
-.how-divider {
-  margin: 0 auto 1.7rem;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  gap: 0.8rem;
-}
 
-.how-divider::before,
-.how-divider::after {
-  content: "";
-  height: 1px;
-  background: #d7b9b0;
-}
-
-.how-heart {
-  color: #b88883;
-  font-size: 0.9rem;
-  line-height: 1;
-}
 
 .how-steps {
   display: grid;
@@ -474,26 +455,12 @@ h2 {
   font-size: 0.95rem;
 }
 
-@media (min-width: 1024px) {
-  .how-step + .how-step {
-    position: relative;
-  }
 
-  .how-step + .how-step::before {
-    content: "";
-    position: absolute;
-    top: -0.9rem;
-    left: 12%;
-    right: 12%;
-    height: 1px;
-    background: linear-gradient(to right, transparent, rgba(198, 160, 82, 0.32), transparent);
-  }
-}
 
 .examples {
   background: linear-gradient(160deg, #fdf3ee 0%, #f9eae7 100%);
-  border-top: 1px solid #efdcd6;
-  border-bottom: 1px solid #efdcd6;
+
+
 }
 
 .examples .container {
@@ -600,8 +567,8 @@ h2 {
 .testimonials {
   text-align: center;
   background: linear-gradient(160deg, #fdf8f4 0%, #f8eee8 100%);
-  border-top: 1px solid #ecdcd6;
-  border-bottom: 1px solid #ecdcd6;
+
+
 }
 
 .testimonials-inner {
@@ -760,12 +727,7 @@ h2 {
   text-decoration-color: #aa7387;
 }
 
-.price-divider {
-  width: min(170px, 58%);
-  height: 1px;
-  margin: 0 auto 1.25rem;
-  background: linear-gradient(90deg, rgba(207, 176, 122, 0) 0%, rgba(207, 176, 122, 0.95) 48%, rgba(207, 176, 122, 0) 100%);
-}
+
 
 .price {
   font-size: clamp(2rem, 10vw, 2.7rem);
@@ -1111,7 +1073,7 @@ h2 {
 }
 
 .footer {
-  border-top: 1px solid var(--border);
+
   padding: 1.4rem 0;
   color: var(--muted);
   font-size: 0.95rem;
@@ -1600,7 +1562,7 @@ h2 {
 .example-title {
   position: relative;
   margin: 0.95rem auto 0.25rem;
-  padding: 0.15rem 0.45rem 0.7rem;
+  padding: 0.15rem 0.45rem 0.3rem;
   font-family: "Great Vibes", "Playfair Display", Georgia, serif;
   font-size: clamp(1.55rem, 5vw, 2.15rem);
   font-weight: 400;
@@ -1611,16 +1573,7 @@ h2 {
   text-shadow: 0 2px 10px rgba(207, 176, 122, 0.22);
 }
 
-.example-title::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: min(120px, 46%);
-  height: 1px;
-  transform: translateX(-50%);
-  background: linear-gradient(90deg, rgba(207, 176, 122, 0), rgba(207, 176, 122, 0.9), rgba(207, 176, 122, 0));
-}
+
 
 .examples-more {
   max-width: 920px;
@@ -1635,7 +1588,7 @@ h2 {
 .creative-workspace {
   text-align: center;
   background: linear-gradient(160deg, #fff8f3 0%, #f8eee8 100%);
-  border-bottom: 1px solid #ecdcd6;
+
 }
 
 .creative-workspace-inner {
@@ -1823,4 +1776,115 @@ h2 {
   .example-lightbox {
     display: none !important;
   }
+}
+
+
+      .trustpilot-summary {
+        padding: 0.9rem 1rem;
+
+        background: var(--bg-soft);
+        text-align: center;
+      }
+      .trustpilot-summary-inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 0.45rem 0.85rem;
+        max-width: 760px;
+        margin: 0 auto;
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+      .trustpilot-summary-stars {
+        color: #00b67a;
+        font-size: 1.25rem;
+        letter-spacing: 0.08em;
+        line-height: 1;
+        white-space: nowrap;
+      }
+      .trustpilot-summary strong {
+        color: var(--text);
+        font-weight: 600;
+      }
+      .trustpilot-summary-link {
+        padding: 0.35rem 0.8rem;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        color: var(--primary-strong);
+        text-decoration: none;
+        font-size: 0.8rem;
+        transition: background-color 150ms ease;
+      }
+      .trustpilot-summary-link:hover,
+      .trustpilot-summary-link:focus-visible {
+        background-color: var(--bg);
+      }
+      @media (max-width: 480px) {
+        .trustpilot-summary-inner {
+          max-width: 280px;
+        }
+        .trustpilot-summary-rating {
+          flex-basis: 100%;
+        }
+      }
+
+/* Shared navigation and spacing for the shorter, focused pages. */
+.site-nav-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.85rem 0;
+  gap: 0.6rem 1.5rem;
+}
+.site-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0.5rem;
+}
+.site-menu a {
+  padding: 0.6rem 0.7rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  text-decoration: none;
+  border-radius: 999px;
+}
+.site-menu a:hover,
+.site-menu a[aria-current="page"] {
+  color: var(--primary-strong);
+  background: var(--bg);
+}
+.site-menu a:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+.how-steps { margin-top: 1.4rem; }
+.home-order { text-align: center; }
+.home-order h2,
+.order-ready > h2,
+.occasions h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  color: #6f4d4a;
+}
+.occasions h2 {
+  color: #5a3f3f;
+  font-size: clamp(1.35rem, 3.4vw, 2rem);
+  font-weight: 600;
+}
+.occasions p {
+  max-width: 70ch;
+  margin: 0.9rem auto;
+  color: #2f201c;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(0.97rem, 2.8vw, 1.26rem);
+  line-height: 1.85;
+}
+.about { padding: 3.5rem 0; }
+.about p { line-height: 1.85; }
+@media (max-width: 760px) {
+  .site-nav-inner { justify-content: center; }
+  .site-menu { justify-content: center; width: 100%; gap: 0.15rem; }
+  .site-menu a { font-size: 0.875rem; padding: 0.6rem 0.5rem; }
+  .about { padding: 2.75rem 0; }
 }
