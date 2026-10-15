@@ -2132,3 +2132,95 @@ body { background-color: var(--warm-ivory); background-image: linear-gradient(14
  .service-card > .image-crop { height: 240px; }
  .chat-photo-grid .image-crop { height: 220px; border-radius: 16px; }
 }
+
+/* Uploaded floral artwork leads the softer, image-rich service pages. */
+.soft-page { background: radial-gradient(ellipse at 5% 5%, #fae7ec, transparent 40%), radial-gradient(ellipse at 95% 35%, #e5f2fa, transparent 45%), #fffaf4; }
+.soft-page h1, .soft-page h2, .soft-page h3 { font-family: "Playfair Display", Georgia, serif; color: #4d3c47; font-weight: 500; }
+.soft-page h1 { letter-spacing: -0.025em; font-style: normal; font-size: clamp(2.1rem, 4.4vw, 3.9rem); line-height: 1.2; }
+.soft-page h2 { font-size: clamp(1.8rem, 3.7vw, 3rem); line-height: 1.25; letter-spacing: -0.02em; }
+.soft-page p { color: #735c65; }
+.soft-page .site-nav { background: rgba(255,250,244,0.94); }
+.soft-intro, .mother-hero { display: grid; grid-template-columns: 1.2fr 0.8fr; align-items: center; gap: clamp(2rem, 5vw, 5rem); padding: 3rem 0; max-width: 1100px; }
+.intro-copy { padding: 1rem 0; }
+.intro-lead { font-size: clamp(1.05rem, 1.8vw, 1.22rem); line-height: 1.8; max-width: 48ch; }
+.design-direction { font-size: 1rem; line-height: 1.75; margin: 1.5rem 0 0; max-width: 48ch; }
+.design-direction a { color: #a34c6a; text-underline-offset: 0.2em; font-weight: 600; }
+.artwork-link { display: block; border-radius: 22px; }
+.artwork-link:focus-visible { outline: 3px solid #a34c6a; outline-offset: 5px; }
+.uploaded-artwork { display: block; width: 100%; height: auto; border-radius: 22px; box-shadow: 0 15px 40px rgba(137,93,104,0.12); }
+.intro-art { max-width: 360px; justify-self: end; transform: rotate(2deg); }
+.soft-eyebrow { display: block; font-size: 0.8rem; line-height: 1.6; color: #997d58; letter-spacing: 0.08em; margin-bottom: 0.7rem; }
+.business-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.7rem; max-width: 1000px; margin-bottom: 4rem; }
+.business-card { padding: 1.2rem; border-radius: 32px; border: 1px solid rgba(204,172,115,0.28); box-shadow: 0 16px 40px rgba(117,80,99,0.07); display: flex; flex-direction: column; }
+.blue-card { background: linear-gradient(150deg, #e5f2fa, #fffaf6); }
+.pink-card { background: linear-gradient(150deg, #f9e5ed, #fffaf6); }
+.business-art { width: 100%; max-width: 330px; margin: 0 auto; }
+.business-art img { width: 100%; height: auto; display: block; border-radius: 20px; }
+.business-copy { padding: 1.5rem 0.6rem 0.5rem; display: flex; flex-direction: column; align-items: flex-start; flex: 1; }
+.business-copy h2 { font-size: clamp(1.5rem, 2.6vw, 2rem); }
+.business-copy p { margin: 0 0 1.25rem; }
+.business-copy .btn { margin-top: auto; }
+.soft-page .btn { padding: 0.95rem 1.45rem; border-radius: 999px; font-weight: 600; line-height: 1.45; text-decoration: none; transition: transform 180ms ease, box-shadow 180ms ease; }
+.soft-page .btn:hover { transform: translateY(-2px); }
+.soft-page .btn:focus-visible { outline: 3px solid #805777; outline-offset: 4px; }
+.soft-page .btn-whatsapp { background: linear-gradient(130deg, #b5446d, #cf718e); color: #fff; border: 1px solid #e9bf93; box-shadow: 0 9px 22px rgba(174,65,104,0.23); }
+.soft-page .btn-whatsapp:hover { box-shadow: 0 13px 28px rgba(174,65,104,0.3); }
+.soft-page .btn-soft-blue { color: #315c75; background: linear-gradient(130deg, #c1dfef, #dceef8); box-shadow: 0 7px 18px rgba(82,143,180,0.15); }
+.soft-page .btn-soft-pink { color: #8e405d; background: linear-gradient(130deg, #f3c2d4, #f9dce6); box-shadow: 0 7px 18px rgba(172,83,117,0.15); }
+.soft-feature { max-width: 1080px; display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.7rem, 5vw, 4rem); align-items: center; padding: 2rem; margin-bottom: 3.5rem; border-radius: 36px; background: linear-gradient(130deg, #f7e5ec, #fffaf4 50%, #e7f2fa); border: 1px solid rgba(204,172,115,0.28); }
+.feature-art { max-width: 400px; width: 100%; margin: auto; }
+.feature-copy { padding: 0.5rem; }
+.feature-copy p { line-height: 1.8; }
+.price-pill { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 1rem; margin: 1.4rem 0; color: #735c65; }
+.price-pill strong { font-family: "Playfair Display", Georgia, serif; font-size: 2.5rem; font-weight: 500; color: #a34766; }
+.price-pill span { font-size: 0.95rem; }
+.little-gift { display: flex; align-items: center; gap: 0.9rem; margin-bottom: 1.5rem; }
+.little-gift > span { color: #b78b4d; font-size: 2rem; }
+.little-gift p { margin: 0; font-size: 0.95rem; }
+.quiet-link { display: block; width: fit-content; color: #8e405d; font-size: 0.95rem; text-underline-offset: 0.25em; margin-top: 1rem; }
+.soft-page .medical-disclaimer { max-width: 1000px; margin: 2rem auto 3rem; padding: 1.4rem; background: rgba(255,255,255,0.55); }
+.mother-hero { max-width: 1050px; grid-template-columns: 1fr 0.85fr; }
+.mother-hero-art { max-width: 380px; justify-self: end; }
+.soft-section-heading { text-align: center; max-width: 640px; margin: 0 auto 1.7rem; }
+.chat-options { max-width: 1000px; padding: 1rem 0 3rem; }
+.chat-option-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+.chat-option { border-radius: 30px; padding: 1.3rem; border: 1px solid rgba(204,172,115,0.28); }
+.pregnancy-option { background: linear-gradient(160deg, #f9e3eb, #fffaf4); }
+.newborn-option { background: linear-gradient(160deg, #dfedf8, #fffaf4); }
+.option-art { max-width: 320px; margin: 0 auto; }
+.option-copy { padding: 1.5rem 0.4rem 0.2rem; }
+.option-copy h3 { font-size: 1.6rem; }
+.option-copy p { line-height: 1.75; }
+.option-price { font-weight: 600; color: #994460 !important; }
+.gift-section { max-width: 1000px; padding: 2.5rem; margin-bottom: 3rem; border-radius: 32px; background: #fff6eb; }
+.gift-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+.gift-grid article { text-align: center; padding: 1.4rem; background: rgba(255,255,255,0.6); border-radius: 22px; }
+.gift-grid article > span { color: #bf965b; font-size: 2.5rem; }
+.gift-grid h3 { font-size: 1.25rem; margin: 0.5rem 0; }
+.gift-grid p { margin: 0; line-height: 1.75; }
+.contact-with-art { display: grid; grid-template-columns: 0.8fr 1fr; align-items: center; gap: 2rem; max-width: 1000px; padding: 2.5rem 0; text-align: left; }
+.contact-art { max-width: 320px; }
+@media (max-width: 700px) {
+ .soft-intro, .mother-hero { grid-template-columns: 1fr; gap: 1.5rem; padding: 2rem 0; }
+ .intro-copy { text-align: center; padding: 0; }
+ .intro-lead, .design-direction { margin-left: auto; margin-right: auto; }
+ .intro-art { max-width: 280px; justify-self: center; transform: none; }
+ .business-cards, .chat-option-grid, .gift-grid, .soft-feature, .contact-with-art { grid-template-columns: 1fr; }
+ .business-cards { gap: 1.2rem; margin-bottom: 2rem; }
+ .business-art { max-width: 310px; }
+ .business-copy { padding: 1.2rem 0.3rem 0.3rem; }
+ .business-copy h2 { font-size: 1.65rem; }
+ .soft-feature { padding: 1.2rem; border-radius: 28px; margin-bottom: 2rem; gap: 1.5rem; }
+ .soft-page .btn { width: 100%; text-align: center; }
+ .feature-art { max-width: 340px; }
+ .mother-hero-copy { text-align: center; }
+ .mother-hero .price-pill { justify-content: center; }
+ .mother-hero-art { max-width: 320px; justify-self: center; }
+ .gift-section { padding: 1.6rem 1rem; }
+ .gift-grid { gap: 0.8rem; }
+ .contact-with-art { text-align: center; }
+ .contact-art { margin: auto; }
+ .booking-feature .feature-copy { order: 2; }
+ .booking-feature .feature-art { order: 1; }
+}
+@media (prefers-reduced-motion: reduce) { .soft-page .btn { transition: none; } }
