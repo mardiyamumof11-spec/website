@@ -1,0 +1,7 @@
+/* The shared Contact page welcomes both businesses. */
+.m-contact .contact-business-options { display: grid; gap: 14px; max-width: 490px; margin: 25px auto 0; }
+.m-contact .contact-business-options .btn { width: 100%; }
+.m-contact .contact-business-options .btn-primary { background: linear-gradient(130deg, #a25d76, #b37382); border-color: #c3a06a; }
+.m-contact .contact-business-options .btn-secondary { background: #deedf7; color: #35566d; border-color: #b5cbd8; }
+.m-contact .contact-business-options .btn-secondary:hover { background: #cbdfea; }
+.m-contact .contact-welcome { border-color: #ddc9a9; background: linear-gradient(130deg, #fbe7ef, #fffaf2 48%, #e3f0f8); }
