@@ -1,0 +1,88 @@
+/* Personal homepage story; no shared page styles are changed. */
+.motherhood-story { padding: 8px 0 32px; }
+.motherhood-story-card {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: clamp(25px, 5vw, 48px);
+  border: 1px solid #dcc6a3;
+  border-radius: 26px;
+  background: radial-gradient(ellipse at 0 0, #fbe6ee 0, transparent 52%), radial-gradient(ellipse at 100% 100%, #e4f0f9 0, transparent 52%), #fffaf3;
+  box-shadow: 0 10px 32px #9c7f6510;
+}
+.story-floral { display: flex; justify-content: center; align-items: center; gap: 18px; color: #a88c59; margin-bottom: 18px; }
+.story-floral span:first-child { color: #be7f97; font-size: 1.75rem; }
+.story-floral span:last-child { color: #7299b3; font-size: 1.75rem; }
+.motherhood-story h2 {
+  max-width: 630px;
+  margin: 0 auto 25px;
+  text-align: center;
+  color: #745466;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.9rem, 3.8vw, 2.7rem);
+  line-height: 1.25;
+  text-wrap: balance;
+}
+.motherhood-story-copy { max-width: 66ch; margin: auto; color: #685965; font-size: .94rem; line-height: 1.95; }
+.motherhood-story-copy p { margin: 0 0 1.2em; }
+.motherhood-story-details { margin-top: 23px; }
+.motherhood-story-details summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  min-height: 48px;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 10px 23px;
+  border: 1px solid #cdb78f;
+  border-radius: 99px;
+  background: #fffaf3;
+  color: #795568;
+  font-size: .85rem;
+  font-weight: 500;
+  line-height: 1.6;
+  cursor: pointer;
+  list-style: none;
+}
+.motherhood-story-details summary::-webkit-details-marker { display: none; }
+.motherhood-story-details summary:hover { background: #f7e8ed; }
+.motherhood-story-details summary:focus-visible { outline: 3px solid #966d82; outline-offset: 5px; }
+.story-summary-icon { font-size: 1.3rem; color: #9c8053; line-height: 1; }
+.story-close-label { display: none; }
+.motherhood-story-details[open] .story-read-label { display: none; }
+.motherhood-story-details[open] .story-close-label { display: inline; }
+.motherhood-story-details[open] .story-summary-icon { transform: rotate(45deg); }
+.motherhood-story-full { margin-top: 30px; }
+.motherhood-story .story-highlight {
+  border-left: 2px solid #bea16e;
+  border-radius: 0 14px 14px 0;
+  padding: 17px 21px;
+  margin: 27px 0;
+  background: #f8e9ef;
+  color: #7b4e64;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.45rem;
+  line-height: 1.55;
+}
+.motherhood-story .story-highlight strong { font-weight: 600; }
+.motherhood-story .story-purpose { background: #e9f2f8; color: #476780; }
+.motherhood-story .story-signature {
+  margin: 28px 0 0;
+  padding-top: 23px;
+  border-top: 1px solid #dbc8a9;
+  text-align: center;
+  color: #846449;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+@media (max-width: 600px) {
+  .motherhood-story { padding-bottom: 24px; }
+  .motherhood-story-card { padding: 25px 21px; border-radius: 22px; }
+  .motherhood-story-copy { font-size: .88rem; line-height: 1.9; }
+  .motherhood-story .story-highlight { font-size: 1.3rem; padding: 15px 17px; }
+  .motherhood-story .story-signature { font-size: 1.35rem; }
+}
