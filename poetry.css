@@ -83,3 +83,18 @@
 @media (max-width: 600px) {
   .poetry-luxury .page-intro, .poetry-luxury .hero { padding-top: 35px; padding-bottom: 20px; }
 }
+
+/* A personal closing thought, used only in the poetry page's About section. */
+.poetry-luxury .about .about-heartfelt-note {
+  max-width: 58ch;
+  margin: 1.6rem auto 1.8rem;
+  padding: 1.1rem clamp(1rem, 4vw, 1.8rem);
+  border-left: 2px solid #c9ad78;
+  border-radius: 0 14px 14px 0;
+  background: linear-gradient(120deg, #f8eee2, #fff8f3);
+  color: #795b48;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  line-height: 1.85;
+  text-align: center;
+}
