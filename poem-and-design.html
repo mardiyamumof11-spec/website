@@ -6,7 +6,7 @@
     <title>Mardiya Poem and Design | Mardiya</title>
     <meta
       name="description"
-      content="Personalised digital cards crafted with care, elegance, and heart for every special moment."
+      content="Personalised poems, meaningful gifts and beautiful keepsakes. Explore examples, reviews, prices and ordering details."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,13 +15,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+      <link rel="stylesheet" href="redesign.css" />
+    <script src="site.js" defer></script>
   </head>
-<body class="home poetry-home">
-<nav class="site-nav" aria-label="Main navigation"><div class="container site-nav-inner"><a class="site-brand" href="./index.html">Mardiya</a><div class="site-menu"><a href="./index.html">Home</a><a href="./mother-to-mother.html">Mother to Mother</a><a href="./poem-and-design.html" aria-current="page">Mardiya Poem and Design</a><a href="./contact.html">Contact</a></div></div></nav>
-<nav class="poetry-nav container" aria-label="Poem and design navigation">
-<a href="./poem-and-design.html">Poem and Design</a><a href="./examples.html">Examples</a><a href="./how-it-works.html">How it works</a><a href="./pricing.html">Pricing</a><a href="./faq.html">FAQ</a><a href="./contact.html#order">Order a keepsake</a><a href="https://uk.trustpilot.com/review/mardiyamumof11.co.uk" target="_blank" rel="noopener noreferrer">Customer reviews</a></nav>
-<header class="hero"><div class="container"><h1>Mardiya Poem and Design</h1><p class="tagline">Elegant designs and heartfelt words for the people you love most.</p><p class="hero-intro-line">Beautiful keepsakes for life’s most precious moments.</p><div class="hero-actions"><a class="btn btn-primary" href="./examples.html">View Examples</a></div></div></header>
-<section class="trustpilot-summary" aria-label="Trustpilot customer reviews">
+<body class="m-poetry">
+<a class="skip-link" href="#main-content">Skip to content</a><header class="m-nav"><div class="container m-nav-inner"><a class="m-wordmark" href="./index.html" aria-label="Mardiya home">Mardiya<span>Made from the heart</span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" hidden><span class="menu-lines" aria-hidden="true">☰</span> Menu</button><nav class="m-menu" id="main-menu" aria-label="Main navigation"><a href="./index.html">Home</a>
+<a href="./poem-and-design.html" aria-current="page">Mardiya Poem and Design</a>
+<a href="./pricing.html">Prices</a>
+<a href="./faq.html">Questions</a>
+<a href="./contact.html">Contact</a></nav></div></header>
+<main id="main-content"><section class="page-intro container"><p class="eyebrow">Made with care, sincerity &amp; love</p><h1>Mardiya Poem and Design</h1><p class="intro-lead">Personalised poems, meaningful gifts and beautiful keepsakes.</p><p>Beautiful &amp; heartfelt personalised poems, written especially for you.</p><a class="btn btn-primary" href="./examples.html">Explore My Examples <span aria-hidden="true">→</span></a></section><nav class="poetry-links" aria-label="Poems and designs navigation"><a href="./examples.html">Examples</a><a href="./how-it-works.html">How to Order</a><a href="./pricing.html#pricing">Poem &amp; Design Prices</a><a href="./faq.html">Questions</a><a href="./contact.html#order">Start Your Order</a></nav><section class="trustpilot-summary" aria-label="Trustpilot customer reviews">
       <div class="trustpilot-summary-inner">
         <span class="trustpilot-summary-stars" role="img" aria-label="Five green stars">★★★★★</span>
         <strong>Excellent</strong>
@@ -29,7 +32,6 @@
         <a class="trustpilot-summary-link" href="https://uk.trustpilot.com/review/mardiyamumof11.co.uk" target="_blank" rel="noopener noreferrer">Read our reviews</a>
       </div>
     </section>
-<main>
 <section class="section occasions" aria-labelledby="about-occasions-heading">
   <div class="container occasions-inner">
     <h2 id="about-occasions-heading">Personalised Poems for Every Occasion</h2>
@@ -86,33 +88,6 @@
         </div>
       </section>
 </main>
-<footer class="footer">
-      <div class="container footer-inner">
-        <p>© 2026 Mardiya Poems &amp; Designs.<br />Each poem written with care, sincerity and from the heart.</p>
-      </div>
-    </footer>
-<script>
-      const aboutSection = document.querySelector(".about");
-      if (aboutSection) {
-        const revealAbout = () => aboutSection.classList.add("is-visible");
-        if ("IntersectionObserver" in window) {
-          const observer = new IntersectionObserver(
-            (entries) => {
-              entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                  revealAbout();
-                  observer.disconnect();
-                }
-              });
-            },
-            { threshold: 0.2 }
-          );
-          observer.observe(aboutSection);
-        } else {
-          revealAbout();
-        }
-      }
-
-      </script>
+<footer class="m-footer"><div class="container"><a class="m-wordmark" href="./index.html">Mardiya</a><p>Motherhood, meaningful words &amp; moments to treasure.</p><div class="footer-links"><a href="./index.html">Mother to Mother Chats</a><a href="./poem-and-design.html">Poems &amp; Designs</a><a href="./contact.html">Contact</a></div><p class="copyright">© 2026 Mardiya · Made with care and from the heart.</p></div></footer>
 </body>
 </html>
