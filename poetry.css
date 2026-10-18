@@ -227,3 +227,25 @@
   .m-home.poetry-luxury .about-home-story .story-quote { margin: 1.45rem auto; padding: 1.2rem 1.05rem; }
   .m-home.poetry-luxury .trustpilot-story .trustpilot-summary-link.review-cta { width: 100%; }
 }
+
+
+/* Gentle mobile-friendly line wrapping to avoid lonely single-word endings. */
+.m-home.poetry-luxury .page-intro h1,
+.m-home.poetry-luxury .occasions h2,
+.m-home.poetry-luxury .about-home-story h2,
+.m-home.poetry-luxury .trustpilot-story h2,
+.m-home.poetry-luxury .home-examples h2,
+.m-home.poetry-luxury .home-order h2,
+.m-home.poetry-luxury .creative-workspace h2 {
+  text-wrap: balance;
+}
+.m-home.poetry-luxury .page-intro p,
+.m-home.poetry-luxury .occasions p,
+.m-home.poetry-luxury .about-home-story p,
+.m-home.poetry-luxury .trustpilot-story p,
+.m-home.poetry-luxury .home-examples p,
+.m-home.poetry-luxury .home-order p,
+.m-home.poetry-luxury .creative-workspace p,
+.m-home.poetry-luxury .story-quote p {
+  text-wrap: pretty;
+}
