@@ -1,4 +1,4 @@
-/* The shared Contact page welcomes both businesses. */
+/* Elegant contact details for Mardiya Poem and Design. */
 .m-contact .contact-business-options { display: grid; gap: 14px; max-width: 490px; margin: 25px auto 0; }
 .m-contact .contact-business-options .btn { width: 100%; }
 .m-contact .contact-business-options .btn-primary { background: linear-gradient(130deg, #a25d76, #b37382); border-color: #c3a06a; }
