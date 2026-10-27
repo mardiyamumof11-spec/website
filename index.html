@@ -18,6 +18,14 @@
       <link rel="stylesheet" href="redesign.css" />
     <script src="site.js" defer></script>
       <link rel="stylesheet" href="poetry.css" />
+    <style>
+      .promo-film { text-align: center; }
+      .promo-film__inner { max-width: 850px; margin: 0 auto; padding: clamp(22px, 4vw, 46px); background: linear-gradient(145deg, #fffaf7, #f9eff0); border: 1px solid #ecd8ce; border-radius: 26px; }
+      .promo-film__inner > p { max-width: 580px; margin: 0 auto 18px; color: #70636b; }
+      .promo-film__inner h2 { margin: 0 auto 14px; }
+      .promo-film video { display: block; width: min(100%, 370px); height: auto; aspect-ratio: 9 / 16; object-fit: contain; margin: 22px auto 20px; border-radius: 16px; background: #e4d5cb; box-shadow: 0 12px 36px rgba(71, 48, 42, .18); }
+      .promo-film .btn { margin-top: 8px; }
+    </style>
   </head>
 <body class="m-home m-poetry poetry-luxury">
 <a class="skip-link" href="#main-content">Skip to content</a><header class="m-nav"><div class="container m-nav-inner"><a class="m-wordmark" href="./index.html" aria-label="Mardiya home">Mardiya<span>Made from the heart</span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" hidden><span class="menu-lines" aria-hidden="true">☰</span> Menu</button><nav class="m-menu" id="main-menu" aria-label="Main navigation"><a href="./index.html" aria-current="page">Home</a>
@@ -64,7 +72,26 @@
   <h2 id="home-examples-heading">See My Examples</h2>
   <p>Browse a selection of personalised poems, keepsakes and gifts I have lovingly created for previous customers. Every design is unique and written especially for the person receiving it.</p>
   <a class="btn btn-primary" href="./examples.html">View Examples</a>
-</section><section class="section creative-workspace" aria-labelledby="creative-workspace-heading">
+</section><section class="section container promo-film" id="featured-film" aria-labelledby="featured-film-heading" hidden>
+  <div class="promo-film__inner">
+    <p class="eyebrow">A little glimpse of Mardiya – Poems &amp; Designs</p>
+    <h2 id="featured-film-heading">From heartfelt words to a treasured gift</h2>
+    <p>See how personal words become a beautiful framed keepsake, prepared with love and care.</p>
+    <video id="featured-film-player" controls playsinline preload="metadata" width="370" height="658" aria-label="Mardiya – Poems and Designs promotional video with spoken narration and soft nasheed-style humming">
+      <source src="./pic/mardiya_ad_corrected_website.mp4" type="video/mp4">
+      Your browser does not support this video.
+    </video>
+    <a class="btn btn-primary" href="./contact.html#order">Create Your Personalised Poem <span aria-hidden="true">→</span></a>
+  </div>
+</section>
+<script>
+  (() => {
+    const film = document.getElementById('featured-film-player');
+    const section = document.getElementById('featured-film');
+    film.addEventListener('loadedmetadata', () => { section.hidden = false; });
+  })();
+</script>
+<section class="section creative-workspace" aria-labelledby="creative-workspace-heading">
         <div class="container creative-workspace-inner">
           <h2 id="creative-workspace-heading">My Workplace</h2>
           <p>
