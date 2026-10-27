@@ -13,28 +13,24 @@
   <link rel="stylesheet" href="poetry.css">
   <script src="site.js" defer></script>
   <style>
-    .reviews-main { padding: clamp(36px, 6vw, 82px) 0 30px; text-align:center; }
-    .reviews-main .eyebrow { color:#9a765f; }
-    .reviews-main h1 { margin:0 auto 15px; color:#705246; font-size:clamp(2.8rem, 7vw, 4.8rem); }
-    .reviews-intro { max-width:690px; margin:0 auto 28px; color:#65585c; font-size:clamp(.96rem, 2vw, 1.12rem); line-height:1.95; }
-    .reviews-accent { color:#98667a; font-family:"Great Vibes",cursive; font-size:clamp(2.2rem, 5vw, 3.4rem); line-height:1.3; margin:0 0 18px; }
-    .review-video-card { max-width:790px; margin:0 auto 30px; padding:clamp(19px,4.5vw,42px); background:linear-gradient(155deg,#fffcf9,#fbf1ef); border:1px solid #e5d3bd; border-radius:26px; }
-    .review-video-card h2 { margin:0 0 12px; font-size:clamp(2rem,4vw,3rem); color:#75574a; }
-    .review-video-card > p { max-width:560px; margin:0 auto 20px; color:#73636a; }
-    .review-video-frame { max-width:350px; margin:22px auto 28px; }
-    .review-video-frame video { display:block; width:100%; height:auto; object-fit:contain; border-radius:18px; background:#f2e8e4; box-shadow:0 15px 32px rgba(87,57,54,.16); }
-    .review-video-frame[hidden] { display:none!important; }
-    .reviews-cta { border-top:1px solid #e8dbcf; padding:30px 6px 0; margin-top:24px; }
-    .reviews-cta h3 { margin:0 0 10px; font-size:clamp(1.7rem,3vw,2.3rem); color:#705246; }
-    .reviews-cta p { max-width:520px; margin:0 auto 22px; color:#70636b; }
-    .reviews-cta .btn { white-space:normal; max-width:100%; }
-    .reviews-note { font-size:.79rem; margin:12px 0 0; color:#81706c; }
-    .reviews-order { margin:28px auto 0; text-align:center; max-width:600px; }
-    .reviews-order p { color:#665d61; }
-    @media(max-width:600px) { .review-video-card { border-radius:22px; } .reviews-main { padding-top:42px; } .reviews-cta .btn { width:100%; } }
+    .m-reviews .reviews-main { max-width: 790px; padding: clamp(24px, 4vw, 40px) 0 8px; text-align: center; }
+    .m-reviews .reviews-main h1,
+    .m-reviews .reviews-main h2 { color: #705246; line-height: 1.3; text-wrap: balance; }
+    .m-reviews .reviews-main h1 { margin: 0 0 20px; font-size: clamp(1.55rem, 4.5vw, 2.2rem); font-style: normal; }
+    .m-reviews .reviews-main h2 { margin: 0 0 12px; font-size: clamp(1.4rem, 4vw, 1.9rem); }
+    .m-reviews .review-video-frame { width: min(100%, 310px); margin: 0 auto; padding: 6px; border: 1px solid #dcc6a5; border-radius: 22px; background: #fffaf5; box-shadow: 0 10px 28px rgba(112, 78, 54, .08); }
+    .m-reviews .review-video-frame video { display: block; width: 100%; height: auto; object-fit: contain; border-radius: 16px; background: #f2e8e4; }
+    .m-reviews .reviews-customers { margin: clamp(26px, 4vw, 36px) auto 0; max-width: 620px; }
+    .m-reviews .reviews-customers p { max-width: 56ch; margin: 0 auto 20px; color: #65585c; font-size: .95rem; line-height: 1.85; text-wrap: pretty; }
+    .m-reviews .reviews-main .btn { max-width: 100%; min-height: 48px; padding: .8rem 1.5rem; white-space: normal; border-radius: 16px; }
+    .m-reviews .reviews-order { max-width: 620px; margin: clamp(28px, 4vw, 38px) auto 0; padding: clamp(24px, 4vw, 30px) 12px 0; border-top: 1px solid #e2cfae; }
+    .m-reviews .reviews-order h2 { font-size: clamp(1.35rem, 4vw, 1.75rem); }
+    .m-reviews .reviews-order p { margin: 0 auto 18px; color: #795b48; font-size: .95rem; line-height: 1.8; text-wrap: pretty; }
+    .m-reviews .m-footer { margin-top: 28px; }
+    @media (max-width: 400px) { .m-reviews .reviews-main .btn { width: 100%; padding-inline: 1rem; } }
   </style>
 </head>
-<body class="m-poetry poetry-luxury">
+<body class="m-poetry poetry-luxury m-reviews">
 <a class="skip-link" href="#main-content">Skip to content</a>
 <header class="m-nav">
   <div class="container m-nav-inner">
@@ -51,43 +47,28 @@
   </div>
 </header>
 <main id="main-content" class="reviews-main container">
-  <p class="eyebrow">Kind words from customers</p>
-  <h1>Customer Reviews</h1>
-  <p class="reviews-accent">A little business, made from the heart</p>
-  <p class="reviews-intro">As my poetry business grows, every order and every kind word means so much to me. I warmly invite you to discover what customers have shared about their experiences with Mardiya – Poems &amp; Designs.</p>
-  <section class="review-video-card" aria-labelledby="review-video-heading">
-    <h2 id="review-video-heading">A personal hello from Mardiya</h2>
-    <p>A little introduction from me, and an invitation to hear from those who have ordered.</p>
+  <section class="reviews-hello" aria-labelledby="review-video-heading">
+    <h1 id="review-video-heading">A Personal Hello from Mardiya</h1>
     <div class="review-video-frame" id="review-video-frame">
-      <video id="review-welcome-video" controls playsinline preload="metadata" width="350" height="622" poster="./pic/pic3.png" aria-label="Mardiya introducing her small business and inviting viewers to read customer reviews">
+      <video id="review-welcome-video" controls playsinline preload="metadata" width="350" height="622" aria-label="Mardiya introducing her small business and inviting viewers to read customer reviews">
         <source src="./pic/trustpilot.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
       </video>
     </div>
-    <div class="reviews-cta">
-      <h3>Don't just take my word for it</h3>
-      <p>Read the independent reviews shared by my lovely customers on Trustpilot.</p>
-      <a class="btn btn-primary" href="https://uk.trustpilot.com/review/mardiyamumof11.co.uk" target="_blank" rel="noopener noreferrer">Read My Reviews on Trustpilot <span aria-hidden="true">↗</span></a>
-      <p class="reviews-note">Reviews are published independently on Trustpilot.</p>
-    </div>
   </section>
-  <div class="reviews-order">
-    <h2>Your story matters too</h2>
-    <p>Every personalised poem is thoughtfully written to honour the moments and people closest to your heart.</p>
-    <a href="./contact.html#order" class="btn btn-primary">Start Your Poem Order <span aria-hidden="true">→</span></a>
-  </div>
+  <section class="reviews-customers" aria-labelledby="customer-reviews-heading">
+    <h2 id="customer-reviews-heading">Kind Words From Customers</h2>
+    <p>Every poem is personal, and every kind word means the world to me. Discover what my customers have shared about their experiences.</p>
+    <a class="btn btn-primary" href="https://uk.trustpilot.com/review/mardiyamumof11.co.uk" target="_blank" rel="noopener noreferrer">Read My Reviews on Trustpilot <span aria-hidden="true">↗</span></a>
+  </section>
+  <section class="reviews-order" aria-labelledby="reviews-order-heading">
+    <h2 id="reviews-order-heading">Your Story Matters Too</h2>
+    <p>Let me turn your precious memories into words you'll treasure.</p>
+    <a href="./contact.html#order" class="btn btn-primary">Start Your Poem Order</a>
+  </section>
 </main>
-<section class="trustpilot-summary trustpilot-story" aria-labelledby="trustpilot-story-heading">
-  <div class="trustpilot-summary-inner">
-    <p class="reviews-eyebrow">Kind words from customers</p>
-    <h2 id="trustpilot-story-heading">Don't just take my word for it</h2>
-    <p>Every poem is personal, and hearing how a keepsake made someone feel means so much to me. If you are wondering what it is like to order, I invite you to read what my customers have shared in their own words.</p>
-    <a class="trustpilot-summary-link review-cta" href="https://uk.trustpilot.com/review/mardiyamumof11.co.uk" target="_blank" rel="noopener noreferrer">Read customer reviews on Trustpilot <span aria-hidden="true">↗</span></a>
-    <p class="reviews-smallprint">Independent customer reviews on Trustpilot.</p>
-  </div>
-</section>
 <footer class="m-footer"><div class="container">
-<a class="m-wordmark" href="./poem-and-design.html">Mardiya<span>Poem and Design</span></a>
+<a class="m-wordmark" href="./poem-and-design.html">Mardiya<span>POEMS &amp; DESIGNS</span></a>
 <p>Personalised poems, meaningful gifts &amp; beautiful keepsakes.</p>
 <div class="footer-links"><a href="./examples.html">Examples</a><a href="./pricing.html">Prices</a><a href="./reviews.html">Reviews</a><a href="./faq.html">Questions</a><a href="./contact.html#order">Contact &amp; Ordering</a></div>
 <p class="copyright">© 2026 Mardiya Poem and Design · Created with care, sincerity and from the heart.</p>
