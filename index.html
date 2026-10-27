@@ -88,7 +88,10 @@
   (() => {
     const film = document.getElementById('featured-film-player');
     const section = document.getElementById('featured-film');
-    film.addEventListener('loadedmetadata', () => { section.hidden = false; });
+    const fileUrl = film.querySelector('source').getAttribute('src');
+    fetch(fileUrl, { method: 'HEAD', cache: 'no-store' })
+      .then(response => { if (response.ok) section.hidden = false; })
+      .catch(() => { /* Keep the section hidden until the video file is uploaded. */ });
   })();
 </script>
 <section class="section creative-workspace" aria-labelledby="creative-workspace-heading">
