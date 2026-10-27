@@ -19,11 +19,13 @@
     <script src="site.js" defer></script>
       <link rel="stylesheet" href="poetry.css" />
     <style>
+      .intro-film { padding-top: clamp(16px, 3vw, 30px); padding-bottom: 16px; }
+      .intro-film video { display: block; width: 100%; max-width: 790px; height: auto; margin: 0 auto; object-fit: contain; border: 1px solid #ecd8ce; border-radius: 16px; background: #f9eff0; box-shadow: 0 12px 36px rgba(71, 48, 42, .18); }
       .promo-film { text-align: center; }
       .promo-film__inner { max-width: 850px; margin: 0 auto; padding: clamp(22px, 4vw, 46px); background: linear-gradient(145deg, #fffaf7, #f9eff0); border: 1px solid #ecd8ce; border-radius: 26px; }
       .promo-film__inner > p { max-width: 580px; margin: 0 auto 18px; color: #70636b; }
       .promo-film__inner h2 { margin: 0 auto 14px; }
-      .promo-film video { display: block; width: min(100%, 370px); height: auto; aspect-ratio: 9 / 16; object-fit: contain; margin: 22px auto 20px; border-radius: 16px; background: #e4d5cb; box-shadow: 0 12px 36px rgba(71, 48, 42, .18); }
+      .promo-film video { display: block; width: min(100%, 370px); height: auto; object-fit: contain; margin: 22px auto 20px; border-radius: 16px; background: #e4d5cb; box-shadow: 0 12px 36px rgba(71, 48, 42, .18); }
       .promo-film .btn { margin-top: 8px; }
     </style>
   </head>
@@ -35,6 +37,12 @@
 <a href="./reviews.html">Reviews</a>
 <a href="./contact.html">Contact</a></nav></div></header>
 <main id="main-content">
+<div class="container intro-film">
+  <video id="intro-film-player" autoplay muted controls playsinline preload="metadata" aria-label="An introduction to Mardiya – Poems and Designs">
+    <source src="./pic/intro.mp4" type="video/mp4">
+    Your browser does not support this video.
+  </video>
+</div>
 <section class="page-intro container"><p class="eyebrow">Made with care, sincerity &amp; love</p><h1>Beautiful &amp; Heartfelt Personalised Poems</h1><p class="intro-lead">Personalised words, meaningful gifts and beautiful keepsakes.</p><p>Every poem is thoughtfully written from the heart to celebrate a story, a memory or someone special.</p><a class="btn btn-primary" href="./examples.html">Explore My Examples <span aria-hidden="true">→</span></a></section>
 <section class="section occasions" aria-labelledby="about-occasions-heading">
   <div class="container occasions-inner">
@@ -73,28 +81,18 @@
   <h2 id="home-examples-heading">See My Examples</h2>
   <p>Browse a selection of personalised poems, keepsakes and gifts I have lovingly created for previous customers. Every design is unique and written especially for the person receiving it.</p>
   <a class="btn btn-primary" href="./examples.html">View Examples</a>
-</section><section class="section container promo-film" id="featured-film" aria-labelledby="featured-film-heading" hidden>
+</section><section class="section container promo-film" id="featured-film" aria-labelledby="featured-film-heading">
   <div class="promo-film__inner">
     <p class="eyebrow">A little glimpse of Mardiya – Poems &amp; Designs</p>
     <h2 id="featured-film-heading">From heartfelt words to a treasured gift</h2>
     <p>See how personal words become a beautiful framed keepsake, prepared with love and care.</p>
     <video id="featured-film-player" controls playsinline preload="metadata" width="370" height="658" aria-label="Mardiya – Poems and Designs promotional video with spoken narration and soft nasheed-style humming">
-      <source src="./pic/mardiya_ad_corrected_website.mp4" type="video/mp4">
+      <source src="./pic/promo.mp4" type="video/mp4">
       Your browser does not support this video.
     </video>
     <a class="btn btn-primary" href="./contact.html#order">Create Your Personalised Poem <span aria-hidden="true">→</span></a>
   </div>
 </section>
-<script>
-  (() => {
-    const film = document.getElementById('featured-film-player');
-    const section = document.getElementById('featured-film');
-    const fileUrl = film.querySelector('source').getAttribute('src');
-    fetch(fileUrl, { method: 'HEAD', cache: 'no-store' })
-      .then(response => { if (response.ok) section.hidden = false; })
-      .catch(() => { /* Keep the section hidden until the video file is uploaded. */ });
-  })();
-</script>
 <section class="section creative-workspace" aria-labelledby="creative-workspace-heading">
         <div class="container creative-workspace-inner">
           <h2 id="creative-workspace-heading">My Workplace</h2>

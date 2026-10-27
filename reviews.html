@@ -22,7 +22,7 @@
     .review-video-card h2 { margin:0 0 12px; font-size:clamp(2rem,4vw,3rem); color:#75574a; }
     .review-video-card > p { max-width:560px; margin:0 auto 20px; color:#73636a; }
     .review-video-frame { max-width:350px; margin:22px auto 28px; }
-    .review-video-frame video { display:block; width:100%; aspect-ratio:9/16; height:auto; object-fit:contain; border-radius:18px; background:#f2e8e4; box-shadow:0 15px 32px rgba(87,57,54,.16); }
+    .review-video-frame video { display:block; width:100%; height:auto; object-fit:contain; border-radius:18px; background:#f2e8e4; box-shadow:0 15px 32px rgba(87,57,54,.16); }
     .review-video-frame[hidden] { display:none!important; }
     .reviews-cta { border-top:1px solid #e8dbcf; padding:30px 6px 0; margin-top:24px; }
     .reviews-cta h3 { margin:0 0 10px; font-size:clamp(1.7rem,3vw,2.3rem); color:#705246; }
@@ -58,9 +58,9 @@
   <section class="review-video-card" aria-labelledby="review-video-heading">
     <h2 id="review-video-heading">A personal hello from Mardiya</h2>
     <p>A little introduction from me, and an invitation to hear from those who have ordered.</p>
-    <div class="review-video-frame" id="review-video-frame" hidden>
+    <div class="review-video-frame" id="review-video-frame">
       <video id="review-welcome-video" controls playsinline preload="metadata" width="350" height="622" poster="./pic/pic3.png" aria-label="Mardiya introducing her small business and inviting viewers to read customer reviews">
-        <source src="./pic/1000626551.mp4" type="video/mp4">
+        <source src="./pic/trustpilot.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
       </video>
     </div>
@@ -83,16 +83,5 @@
 <div class="footer-links"><a href="./examples.html">Examples</a><a href="./pricing.html">Prices</a><a href="./reviews.html">Reviews</a><a href="./faq.html">Questions</a><a href="./contact.html#order">Contact &amp; Ordering</a></div>
 <p class="copyright">© 2026 Mardiya Poem and Design · Created with care, sincerity and from the heart.</p>
 </div></footer>
-<script>
-  (() => {
-    const video = document.getElementById('review-welcome-video');
-    const frame = document.getElementById('review-video-frame');
-    const url = video.querySelector('source').getAttribute('src');
-    // Only display the player once the actual MP4 has been uploaded to the website.
-    fetch(url, { method: 'HEAD', cache: 'no-store' })
-      .then(response => { if (response.ok) frame.hidden = false; })
-      .catch(() => { /* Keep the review page and Trustpilot link available. */ });
-  })();
-</script>
 </body>
 </html>
